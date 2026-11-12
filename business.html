@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Business — Enterprise Connectivity Solutions</title>
+  <meta name="description" content="Orbiqa Business delivers enterprise-grade connectivity for SMBs to multinationals. SD-WAN, IoT, global WAN, 99.99% SLA, dedicated support.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="#contact" class="btn btn-primary-sm">Talk to Sales</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="#contact" class="btn btn-primary">Talk to Sales</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">ORBIQA BUSINESS</span>
+    <h1 class="page-hero-title">Built for Those Who<br><span class="gradient-text">Can't Afford to Stop.</span></h1>
+    <p class="page-hero-sub">From growing SMBs to global enterprises. Infrastructure-grade reliability, dedicated teams, and a network that scales to your ambition.</p>
+    <div class="page-hero-actions">
+      <a href="#contact" class="btn btn-primary btn-signal">Talk to an Expert</a>
+      <a href="#tiers" class="btn btn-ghost">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<!-- TIER TABS -->
+<section class="inner-section" id="tiers">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">SOLUTIONS</span>
+      <h2 class="section-title-lg">The Right Solution<br>for Every Scale</h2>
+    </div>
+    <div class="tier-tabs reveal">
+      <button class="tier-tab active" data-tier="smb" id="smb">SMB</button>
+      <button class="tier-tab" data-tier="corporate">Corporate</button>
+      <button class="tier-tab" data-tier="enterprise" id="enterprise">Enterprise</button>
+      <button class="tier-tab" data-tier="wholesale" id="wholesale">Wholesale</button>
+    </div>
+
+    <div class="tier-content active" id="tier-smb">
+      <div class="reveal">
+        <span class="section-eyebrow">SMALL &amp; MEDIUM BUSINESS</span>
+        <h3 class="section-title-lg">Big Network.<br>SMB Price.</h3>
+        <p class="section-body-lg">Get enterprise-quality connectivity without the enterprise price tag. Orbiqa SMB gives small businesses the same reliable network used by the world's largest companies.</p>
+        <ul class="plan-features" style="margin-bottom:2rem">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile fleet management (up to 50 lines)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fiber for your office (up to 1 Gbps)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>99.9% uptime SLA</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Self-service portal and app</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Business hours support</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-signal">Get SMB Quote</a>
+      </div>
+      <div class="reveal" data-delay="200" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:3rem;text-align:center">
+        <div style="font-size:64px;margin-bottom:1rem"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><rect x="10" y="14" width="44" height="46" rx="3" stroke="url(#brandGradH)" stroke-width="1.5"/><rect x="18" y="24" width="8" height="8" rx="1" stroke="url(#brandGradH)" stroke-width="1.2"/><rect x="32" y="24" width="8" height="8" rx="1" stroke="url(#brandGradH)" stroke-width="1.2"/><rect x="18" y="38" width="8" height="8" rx="1" stroke="url(#brandGradH)" stroke-width="1.2"/><rect x="32" y="38" width="8" height="8" rx="1" stroke="url(#brandGradH)" stroke-width="1.2"/><line x1="28" y1="60" x2="28" y2="50" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="36" y1="60" x2="36" y2="50" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div style="font-size:36px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">From $99</div>
+        <div style="font-size:15px;color:var(--text-muted);margin-bottom:1.5rem">/month for first 5 lines</div>
+        <div style="font-size:14px;color:var(--text-secondary);line-height:1.7">Scales flexibly as your team grows. Add lines, upgrade speeds, expand to more locations — all from a single dashboard.</div>
+      </div>
+    </div>
+
+    <div class="tier-content" id="tier-corporate">
+      <div class="reveal">
+        <span class="section-eyebrow">CORPORATE</span>
+        <h3 class="section-title-lg">Multi-Site.<br>One Network.</h3>
+        <p class="section-body-lg">Orbiqa Corporate connects all your offices, branches, and remote workers on a single managed network with full visibility and control.</p>
+        <ul class="plan-features" style="margin-bottom:2rem">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated account manager</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-site fiber connectivity</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SD-WAN with intelligent routing</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>99.95% enhanced SLA</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Monthly billing consolidation</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-signal">Request Corporate Demo</a>
+      </div>
+      <div class="reveal" data-delay="200" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:3rem;text-align:center">
+        <div style="font-size:64px;margin-bottom:1rem"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><rect x="8" y="10" width="12" height="48" rx="2" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="20" y1="18" x2="52" y2="18" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="30" x2="46" y2="30" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="20" y1="42" x2="40" y2="42" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="44" y1="18" x2="44" y2="58" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="30" y1="30" x2="44" y2="18" stroke="url(#brandGradH)" stroke-width="1" stroke-dasharray="3,3"/></svg></div>
+        <div style="font-size:36px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Custom Pricing</div>
+        <div style="font-size:15px;color:var(--text-muted);margin-bottom:1.5rem">Based on sites &amp; team size</div>
+        <div style="font-size:14px;color:var(--text-secondary);line-height:1.7">Fully customised to your infrastructure needs. Our team will map your requirements and build a pricing proposal within 24 hours.</div>
+      </div>
+    </div>
+
+    <div class="tier-content" id="tier-enterprise">
+      <div class="reveal">
+        <span class="section-eyebrow">ENTERPRISE</span>
+        <h3 class="section-title-lg">Global WAN.<br>Zero Downtime.</h3>
+        <p class="section-body-lg">Orbiqa Enterprise is built for organisations where connectivity is not a utility — it is the product. Custom infrastructure, 24/7 NOC, and a 99.99% uptime commitment.</p>
+        <ul class="plan-features" style="margin-bottom:2rem">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom network infrastructure design</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Global WAN across 190 countries</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>99.99% SLA with financial penalties</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>24/7 Network Operations Centre</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>On-site engineering support</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-signal">Talk to Enterprise Sales</a>
+      </div>
+      <div class="reveal" data-delay="200" style="background:linear-gradient(135deg,rgba(27,111,255,0.08),rgba(123,63,255,0.08));border:1px solid var(--border-active);border-radius:var(--radius-lg);padding:3rem;text-align:center">
+        <div style="font-size:64px;margin-bottom:1rem"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><circle cx="32" cy="32" r="26" stroke="url(#brandGradH)" stroke-width="1.5"/><ellipse cx="32" cy="32" rx="12" ry="26" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="6" y1="32" x2="58" y2="32" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="10" y1="18" x2="54" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="10" y1="46" x2="54" y2="46" stroke="url(#brandGradH)" stroke-width="1"/></svg></div>
+        <div style="font-size:36px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">99.99%</div>
+        <div style="font-size:15px;color:var(--text-muted);margin-bottom:1.5rem">Guaranteed uptime SLA</div>
+        <div style="font-size:14px;color:var(--text-secondary);line-height:1.7">Our enterprise SLA includes financial remedies for downtime. We put our money where our uptime is.</div>
+      </div>
+    </div>
+
+    <div class="tier-content" id="tier-wholesale">
+      <div class="reveal">
+        <span class="section-eyebrow">WHOLESALE</span>
+        <h3 class="section-title-lg">Network as a Service.<br>Your Brand.</h3>
+        <p class="section-body-lg">Access Orbiqa's global infrastructure to power your own products. White-label mobile services, carrier interconnect, and API-driven network control.</p>
+        <ul class="plan-features" style="margin-bottom:2rem">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Network-as-a-Service (NaaS)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full white-label capabilities</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Carrier-grade interconnect (BGP/MPLS)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>REST API for programmatic control</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>MVNO enablement</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-signal">Wholesale Enquiry</a>
+      </div>
+      <div class="reveal" data-delay="200" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:3rem;text-align:center">
+        <div style="font-size:64px;margin-bottom:1rem"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><rect x="24" y="8" width="16" height="20" rx="2" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="29" y1="8" x2="29" y2="4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/><line x1="35" y1="8" x2="35" y2="4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/><path d="M24 22h16v6a8 8 0 01-16 0v-6z" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="32" y1="36" x2="32" y2="56" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div style="font-size:36px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">API-First</div>
+        <div style="font-size:15px;color:var(--text-muted);margin-bottom:1.5rem">Programmable infrastructure</div>
+        <div style="font-size:14px;color:var(--text-secondary);line-height:1.7">Build your telecom product on top of Orbiqa's infrastructure. Full API access to provisioning, billing, and network management.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ORBIQA BUSINESS -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">WHY ORBIQA</span>
+      <h2 class="section-title-lg">Built for Business</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box reveal" data-delay="0"><div class="feature-box-icon"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><circle cx="32" cy="32" r="26" stroke="url(#brandGradH)" stroke-width="1.5"/><ellipse cx="32" cy="32" rx="12" ry="26" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="6" y1="32" x2="58" y2="32" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="10" y1="18" x2="54" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="10" y1="46" x2="54" y2="46" stroke="url(#brandGradH)" stroke-width="1"/></svg></div><div class="feature-box-title">Global SLA</div><div class="feature-box-desc">Contractual uptime guarantees apply across all 190 countries. Not just locally — globally.</div></div>
+      <div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><circle cx="24" cy="18" r="8" stroke="url(#brandGradH)" stroke-width="1.5"/><path d="M8 40c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="feature-box-title">Dedicated Support</div><div class="feature-box-desc">A named account manager, available by phone and in-person. You'll never speak to a call centre again.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><rect x="10" y="22" width="28" height="20" rx="4" stroke="url(#brandGradH)" stroke-width="1.5"/><path d="M16 22v-6a8 8 0 0116 0v6" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="32" r="3" fill="rgba(27,111,255,0.2)" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div><div class="feature-box-title">Security First</div><div class="feature-box-desc">ISO 27001 certified. End-to-end encryption, zero-trust architecture, and threat monitoring 24/7.</div></div>
+      <div class="feature-box reveal" data-delay="0"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M8 14h10l12 20h10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 34h10l12-20h10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><polyline points="34,10 40,14 34,18" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="34,30 40,34 34,38" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="feature-box-title">SD-WAN</div><div class="feature-box-desc">Software-defined WAN with intelligent traffic routing, failover, and application-aware prioritisation.</div></div>
+      <div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M14 34c-5-5-5-14 0-20M34 34c5-5 5-14 0-20" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><path d="M19 29c-3-3-3-8 0-10M29 29c3-3 3-8 0-10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="rgba(27,111,255,0.2)" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="24" y1="27" x2="24" y2="42" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div><div class="feature-box-title">IoT Ready</div><div class="feature-box-desc">Dedicated IoT SIM management for fleets, sensors, and connected devices at any scale — millions of endpoints.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M14 34a8 8 0 010-16 10 10 0 0119.6-2A8 8 0 0134 34H14z" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div><div class="feature-box-title">Cloud Connect</div><div class="feature-box-desc">Direct private connections to AWS, Azure, and Google Cloud — bypassing the public internet entirely.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY CREDENTIALS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">CREDENTIALS</span>
+      <h2 class="section-title-lg">Security You Can Trust</h2>
+      <p class="section-body-lg">Orbiqa Business meets the highest global standards for security, privacy, and compliance. Your data, and your customers' data, is always protected.</p>
+    </div>
+    <div class="credential-badges reveal">
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 20 20" fill="none" width="16" height="16"><path d="M10 2l7 2.6v6c0 4-3 6.5-7 8-4-1.5-7-4-7-8V4.6L10 2z" stroke="url(#brandGradH)" stroke-width="1.2"/></svg></span>ISO 27001 Certified</div>
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 20 20" fill="none" width="16" height="16"><circle cx="10" cy="10" r="8" stroke="url(#brandGradH)" stroke-width="1.2"/><polyline points="6,10 9,13 14,7" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>SOC 2 Type II</div>
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 20 20" fill="none" width="16" height="16"><circle cx="10" cy="10" r="8" stroke="url(#brandGradH)" stroke-width="1.2"/><text x="10" y="14" text-anchor="middle" font-size="8" fill="url(#brandGradH)" font-family="sans-serif">EU</text></svg></span>GDPR Compliant</div>
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 20 20" fill="none" width="16" height="16"><rect x="4" y="9" width="12" height="9" rx="2" stroke="url(#brandGradH)" stroke-width="1.2"/><path d="M7 9V7a3 3 0 016 0v2" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/><circle cx="10" cy="13.5" r="1.5" fill="rgba(27,111,255,0.3)"/></svg></span>256-bit AES Encryption</div>
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 20 20" fill="none" width="16" height="16"><path d="M2 7l8-4 8 4" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/><rect x="3" y="7" width="14" height="2" stroke="url(#brandGradH)" stroke-width="1"/><line x1="5" y1="9" x2="5" y2="15" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/><line x1="10" y1="9" x2="10" y2="15" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/><line x1="15" y1="9" x2="15" y2="15" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/><line x1="2" y1="15" x2="18" y2="15" stroke="url(#brandGradH)" stroke-width="1.2" stroke-linecap="round"/></svg></span>PCI DSS Level 1</div>
+      <div class="credential-badge"><span class="credential-badge-icon"><svg viewBox="0 0 64 64" fill="none" width="56" height="56"><circle cx="32" cy="32" r="26" stroke="url(#brandGradH)" stroke-width="1.5"/><ellipse cx="32" cy="32" rx="12" ry="26" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="6" y1="32" x2="58" y2="32" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="10" y1="18" x2="54" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="10" y1="46" x2="54" y2="46" stroke="url(#brandGradH)" stroke-width="1"/></svg></span>FedRAMP Authorized</div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">CASE STUDIES</span>
+      <h2 class="section-title-lg">Trusted by the World's<br>Most Demanding Operations</h2>
+    </div>
+    <div class="case-studies">
+      <div class="case-study reveal" data-delay="0">
+        <div class="case-study-tag">Logistics &amp; Supply Chain</div>
+        <div class="case-study-title">Global Freight Network Achieves Real-Time Visibility</div>
+        <div class="case-study-desc">A leading logistics company deployed Orbiqa IoT SIMs across 200+ locations worldwide, enabling real-time shipment tracking and reducing delays by 34%.</div>
+        <div class="case-study-metric"><strong>200+</strong>Locations connected globally</div>
+      </div>
+      <div class="case-study reveal" data-delay="100">
+        <div class="case-study-tag">Banking &amp; Financial Services</div>
+        <div class="case-study-title">Zero Downtime for a Tier 1 International Bank</div>
+        <div class="case-study-desc">Orbiqa Enterprise WAN connects 78 branch offices across 14 countries for one of Europe's largest banks. Not a single second of downtime in 3 years of operation.</div>
+        <div class="case-study-metric"><strong>0s</strong>Downtime over 3 years</div>
+      </div>
+      <div class="case-study reveal" data-delay="200">
+        <div class="case-study-tag">Healthcare</div>
+        <div class="case-study-title">Mission-Critical Connectivity for Hospital Network</div>
+        <div class="case-study-desc">A regional hospital trust uses Orbiqa's private 5G network for medical imaging, patient monitoring, and surgical robotics — where connectivity directly impacts patient outcomes.</div>
+        <div class="case-study-metric"><strong>99.99%</strong>Uptime on medical network</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="inner-section" id="contact">
+  <div class="container" style="max-width:800px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">GET IN TOUCH</span>
+      <h2 class="section-title-lg">Talk to a Business Expert</h2>
+      <p class="section-body-lg">Tell us about your business. We'll put together a bespoke connectivity proposal within 24 hours.</p>
+    </div>
+    <div class="reveal">
+      <form class="contact-form contact-form-el">
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" placeholder="Elena Vasquez" required></div>
+          <div class="form-group"><label class="form-label">Company Name</label><input type="text" class="form-input" placeholder="Acme Corporation" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Work Email</label><input type="email" class="form-input" placeholder="elena@acme.com" required></div>
+          <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+1 800 123 4567"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Service Interest</label>
+          <select class="form-select">
+            <option value="">Select a solution...</option>
+            <option>SMB Connectivity</option>
+            <option>Corporate WAN</option>
+            <option>Enterprise Infrastructure</option>
+            <option>IoT / Connected Devices</option>
+            <option>Wholesale / MVNO</option>
+            <option>SD-WAN</option>
+            <option>Cloud Connect</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Tell us about your needs</label><textarea class="form-textarea" placeholder="Number of employees, locations, current pain points, timeline..."></textarea></div>
+        <button type="submit" class="btn btn-primary btn-signal" style="width:100%;padding:16px">Submit Enquiry</button>
+        <div class="form-success-msg"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" style="display:inline-block;vertical-align:-2px;margin-right:4px"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Thank you! Our business team will contact you within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">Business Questions Answered</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">What SLA do you offer for Enterprise?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Enterprise customers receive a contractual 99.99% uptime SLA, which equates to less than 52 minutes of downtime per year. The SLA is backed by financial remedies — if we miss the target, you receive credits on your bill. We've maintained 99.997% uptime on average across our global enterprise network over the past 5 years.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How quickly can you deploy a business solution?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">SMB solutions can be live within 3–5 business days. Corporate multi-site deployments typically take 2–6 weeks depending on locations. Enterprise infrastructure projects are scoped individually — our fastest global WAN deployment to date covered 40 sites across 12 countries in 6 weeks.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you support offices in multiple countries?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Orbiqa Business operates natively in 190 countries. We can provide a single contract, single invoice, and single account management team for global operations — regardless of how many countries you operate in. Our Corporate and Enterprise plans are designed specifically for multi-jurisdiction deployments.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is SD-WAN and why does my business need it?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">SD-WAN (Software-Defined Wide Area Network) intelligently routes your business traffic across multiple connection types — fiber, 5G, broadband — choosing the fastest, most reliable path in real time. It improves application performance (especially for cloud apps like Microsoft 365 and Salesforce), reduces costs, and eliminates single points of failure. Orbiqa's SD-WAN includes built-in security, central management, and analytics.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">◻</a><a href="#" class="social-link">▶</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

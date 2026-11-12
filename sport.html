@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Sport — Live Sports, Every Event</title>
+  <meta name="description" content="Watch live football, F1, UFC, tennis, basketball and more with Orbiqa Sport. Included in select bundles or from $29/mo.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="mmaGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D42AFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary-sm">Get Sport</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="#plans" class="btn btn-primary">Get Sport</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero sport-hero" style="position:relative;background:linear-gradient(135deg, #050812 0%, #0A0F28 50%, #0E0A1A 100%)">
+  <div class="sport-hero-accent"></div>
+  <div class="page-hero-content" style="position:relative;z-index:2">
+    <span class="eyebrow">ORBIQA SPORT</span>
+    <h1 class="page-hero-title">Every Match.<br>Every Fight.<br><span class="gradient-text" style="background:linear-gradient(135deg,#D42AFF,#7B3FFF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Live.</span></h1>
+    <p class="page-hero-sub">Football, UFC, F1, Tennis, Basketball, Rugby — all live, all in 4K, on every screen.</p>
+    <div class="page-hero-actions">
+      <a href="#plans" class="btn btn-primary btn-signal">Get Orbiqa Sport</a>
+      <a href="#schedule" class="btn btn-ghost">See What's On</a>
+    </div>
+  </div>
+</section>
+
+<!-- SPORT CATEGORIES -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">SPORTS</span>
+      <h2 class="section-title-lg">Every Sport. Every League.</h2>
+      <p class="section-body-lg">From the world's biggest football leagues to the most elite UFC events — Orbiqa Sport covers it all, live and in 4K Ultra HD.</p>
+    </div>
+
+    <div class="sport-categories reveal">
+
+      <!-- Football -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="26" cy="26" r="22"/>
+          <polygon points="26,10 31,20 26,25 21,20" fill="none"/>
+          <polygon points="26,42 31,32 26,27 21,32" fill="none"/>
+          <polygon points="10,26 20,21 25,26 20,31" fill="none"/>
+          <polygon points="42,26 32,21 27,26 32,31" fill="none"/>
+        </svg>
+        <div class="sport-cat-name">Football</div>
+        <div class="sport-cat-count">4,200+ matches · 30+ leagues</div>
+      </a>
+
+      <!-- UFC -->
+      <a href="#mma" class="sport-cat mma-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="#D42AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="26,4 38,10 46,22 46,30 38,42 26,48 14,42 6,30 6,22 14,10"/>
+        </svg>
+        <div class="sport-cat-name">UFC</div>
+        <div class="sport-cat-count">240+ events/year</div>
+      </a>
+
+      <!-- Formula 1 -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 30h44M8 30l4-10h28l4 10"/>
+          <path d="M12 20l4-8h20l4 8"/>
+          <circle cx="16" cy="34" r="4"/>
+          <circle cx="36" cy="34" r="4"/>
+          <path d="M20 34h12"/>
+        </svg>
+        <div class="sport-cat-name">Formula 1</div>
+        <div class="sport-cat-count">24 race weekends</div>
+      </a>
+
+      <!-- Tennis -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="26" cy="26" r="22"/>
+          <path d="M10 14c5 4 5 16 0 24"/>
+          <path d="M42 14c-5 4-5 16 0 24"/>
+          <line x1="4" y1="26" x2="48" y2="26"/>
+        </svg>
+        <div class="sport-cat-name">Tennis</div>
+        <div class="sport-cat-count">All 4 Grand Slams</div>
+      </a>
+
+      <!-- Basketball -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="26" cy="26" r="22"/>
+          <path d="M10 12c8 6 8 22 0 28"/>
+          <path d="M42 12c-8 6-8 22 0 28"/>
+          <line x1="4" y1="26" x2="48" y2="26"/>
+          <path d="M26 4v44"/>
+        </svg>
+        <div class="sport-cat-name">Basketball</div>
+        <div class="sport-cat-count">1,500+ games/year</div>
+      </a>
+
+      <!-- Rugby -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round">
+          <ellipse cx="26" cy="26" rx="20" ry="13"/>
+          <line x1="6" y1="26" x2="46" y2="26"/>
+          <path d="M14 16c4 3 4 17 0 20"/>
+          <path d="M38 16c-4 3-4 17 0 20"/>
+        </svg>
+        <div class="sport-cat-name">Rugby</div>
+        <div class="sport-cat-count">International + club</div>
+      </a>
+
+      <!-- Golf -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round">
+          <line x1="26" y1="6" x2="26" y2="42"/>
+          <path d="M26 6l14 8-14 8"/>
+          <circle cx="26" cy="46" r="4" fill="rgba(27,111,255,0.1)"/>
+          <path d="M14 44c3-1 8-1 12 2"/>
+        </svg>
+        <div class="sport-cat-name">Golf</div>
+        <div class="sport-cat-count">Major championships</div>
+      </a>
+
+      <!-- Olympics -->
+      <a href="#" class="sport-cat">
+        <svg class="sport-cat-icon" viewBox="0 0 52 52" fill="none" stroke="url(#brandGradH)" stroke-width="1.5">
+          <circle cx="12" cy="22" r="8"/>
+          <circle cx="26" cy="22" r="8"/>
+          <circle cx="40" cy="22" r="8"/>
+          <circle cx="19" cy="33" r="8"/>
+          <circle cx="33" cy="33" r="8"/>
+        </svg>
+        <div class="sport-cat-name">Olympics</div>
+        <div class="sport-cat-count">Every 2 years</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPETITIONS COVERAGE -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">COMPETITIONS</span>
+      <h2 class="section-title-lg">Every League. Every Tournament.<br><span class="gradient-text">One Subscription.</span></h2>
+      <p class="section-body-lg">Orbiqa Sport carries the world's most comprehensive sports rights — from global mega-events to local leagues you won't find anywhere else.</p>
+    </div>
+
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;margin-top:2rem">
+
+      <!-- Football -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 2v4M12 18v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M2 12h4M18 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">Football — European</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">UEFA Champions League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">UEFA Europa League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">UEFA Conference League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Premier League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Bundesliga</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">La Liga</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Serie A</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Ligue 1</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Eredivisie</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Liga Portugal</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Scottish Premiership</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Copa del Rey</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">FA Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">DFB-Pokal</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Carabao Cup</span>
+        </div>
+      </div>
+
+      <!-- Football Global -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">Football — Global</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">MLS</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Saudi Pro League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">J-League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">A-League</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Efbet Liga</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Sesame Cup Bulgaria</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">FIFA World Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">UEFA EURO</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Copa América</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">AFC Champions League</span>
+        </div>
+      </div>
+
+      <!-- American Sports -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" width="22" height="22"><ellipse cx="12" cy="12" rx="9" ry="6"/><path d="M3 12h18M12 6c2 2 2 8 0 12M12 6c-2 2-2 8 0 12"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">American Sports</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NFL — Full Season</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Super Bowl</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NBA — Full Season</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NBA Playoffs</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NHL — Full Season</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Stanley Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">MLB — Full Season</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">World Series</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NCAA Football</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">NCAA Basketball</span>
+        </div>
+      </div>
+
+      <!-- Motorsport & Combat -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#D42AFF" stroke-width="1.5" width="22" height="22"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">Motorsport &amp; Combat</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Formula 1 — All 24 Races</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">F1 Sprint &amp; Qualifying</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">MotoGP</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem;border-color:rgba(212,42,255,0.3);color:#D42AFF;font-weight:700">UFC — All Events</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem;border-color:rgba(212,42,255,0.3);color:#D42AFF;font-weight:700">UFC Prelims</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Boxing World Title Fights</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">PFL MMA</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">WBC / IBF / WBO</span>
+        </div>
+      </div>
+
+      <!-- Racket & Golf -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93c4 4 4 10.14 0 14.14M19.07 4.93c-4 4-4 10.14 0 14.14"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">Tennis &amp; Golf</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Australian Open</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Roland Garros</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Wimbledon</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">US Open Tennis</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">ATP Tour 1000</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">WTA Tour</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Davis Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">PGA Tour</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">The Masters</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">The Open Championship</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">US Open Golf</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Ryder Cup</span>
+        </div>
+      </div>
+
+      <!-- Rugby, Cricket & Olympics -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:1.75rem">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" width="22" height="22"><circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg>
+          <span style="font-weight:700;color:var(--text-primary);font-size:15px">Rugby, Cricket &amp; More</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.4rem">
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Rugby World Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Six Nations</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Super Rugby</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Premiership Rugby</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Cricket World Cup</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">IPL Cricket</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">The Ashes</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Summer Olympics</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Winter Olympics</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Tour de France</span>
+          <span class="platform-icon-box" style="font-size:11px;padding:0.35rem 0.6rem">Snooker World Champs</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- UFC FEATURED SECTION -->
+<section class="inner-section" id="mma">
+  <div class="container">
+    <div class="mma-section reveal">
+      <div class="mma-section-inner">
+
+        <!-- Left: UFC text -->
+        <div>
+          <div class="mma-badge">
+            <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><polygon points="8,1 11,5 15,5 12,9 13,14 8,11 3,14 4,9 1,5 5,5" stroke="#D42AFF" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            Featured &middot; Live MMA
+          </div>
+          <h2 class="mma-title">The Biggest Fights.<br><span>On Orbiqa.</span></h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.7;margin-bottom:var(--space-6)">Exclusive live coverage of the world's premier MMA events. Every championship bout, every main card, every prelim — in 4K with multi-angle replays and expert analysis.</p>
+          <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:var(--space-3);margin-bottom:var(--space-6)">
+            <li style="display:flex;align-items:center;gap:var(--space-3);font-size:14px;color:var(--text-secondary)">
+              <svg viewBox="0 0 16 16" fill="none" width="18" height="18"><polyline points="2,8 6,12 14,4" stroke="#D42AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Exclusive live events
+            </li>
+            <li style="display:flex;align-items:center;gap:var(--space-3);font-size:14px;color:var(--text-secondary)">
+              <svg viewBox="0 0 16 16" fill="none" width="18" height="18"><polyline points="2,8 6,12 14,4" stroke="#D42AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              4K Ultra HD + Dolby Audio
+            </li>
+            <li style="display:flex;align-items:center;gap:var(--space-3);font-size:14px;color:var(--text-secondary)">
+              <svg viewBox="0 0 16 16" fill="none" width="18" height="18"><polyline points="2,8 6,12 14,4" stroke="#D42AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Multi-angle replay
+            </li>
+            <li style="display:flex;align-items:center;gap:var(--space-3);font-size:14px;color:var(--text-secondary)">
+              <svg viewBox="0 0 16 16" fill="none" width="18" height="18"><polyline points="2,8 6,12 14,4" stroke="#D42AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Pre and post-show analysis
+            </li>
+          </ul>
+          <a href="#plans" class="btn btn-primary btn-signal" style="background:linear-gradient(135deg,#D42AFF,#7B3FFF);box-shadow:0 4px 20px rgba(212,42,255,0.3)">Watch UFC Now</a>
+        </div>
+
+        <!-- Right: Fight Card -->
+        <div class="fight-card">
+          <div class="fight-event-label">Next Event &middot; Saturday 22:00 GMT</div>
+          <div class="fight-matchup">
+            <div class="fighter">
+              <div class="fighter-name">Alex "The Storm" Rivera</div>
+              <div class="fighter-record">28-3-0</div>
+            </div>
+            <div class="fight-vs">VS</div>
+            <div class="fighter">
+              <div class="fighter-name">Marcus "Iron" Chen</div>
+              <div class="fighter-record">24-1-0</div>
+            </div>
+          </div>
+          <div class="fight-meta">
+            <span>Heavyweight Championship</span>
+            <span>·</span>
+            <span>5 Rounds</span>
+            <span>·</span>
+            <span>Main Card</span>
+            <span>·</span>
+            <span>Orbiqa Sport</span>
+          </div>
+          <a href="#plans" class="btn btn-ghost btn-full" style="border-color:rgba(212,42,255,0.4);color:#D42AFF;font-size:13px">Subscribe to watch live &#8594;</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPCOMING EVENTS -->
+<section class="inner-section inner-section-dark" id="schedule">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">SCHEDULE</span>
+      <h2 class="section-title-lg">What's On This Week</h2>
+    </div>
+    <div class="event-cards reveal">
+
+      <div class="event-card">
+        <div class="event-sport-tag mma-tag">
+          <span class="event-live-dot"></span>
+          MMA &middot; LIVE
+        </div>
+        <div class="event-name">Orbiqa FC 312: Rivera vs Chen</div>
+        <div class="event-date">Saturday &middot; 22:00 GMT</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-sport-tag">
+          Football &middot; LIVE
+        </div>
+        <div class="event-name">Champions League QF &middot; 1st Leg</div>
+        <div class="event-date">Tuesday &middot; 20:00 CET</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-sport-tag">
+          Formula 1 &middot; LIVE
+        </div>
+        <div class="event-name">Monaco Grand Prix &middot; Qualifying</div>
+        <div class="event-date">Saturday &middot; 15:00 CET</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-sport-tag mma-tag">
+          MMA &middot; UPCOMING
+        </div>
+        <div class="event-name">Orbiqa FC 313: Welterweight Title</div>
+        <div class="event-date">2 weeks &middot; Friday &middot; 23:00 GMT</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-sport-tag">
+          Tennis &middot; LIVE
+        </div>
+        <div class="event-name">Roland Garros &middot; Semifinals</div>
+        <div class="event-date">Thursday &middot; 13:00 CEST</div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-sport-tag">
+          Basketball &middot; LIVE
+        </div>
+        <div class="event-name">NBA Playoffs &middot; Conference Finals</div>
+        <div class="event-date">Sunday &middot; 02:00 CET</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPORT PLANS -->
+<section class="inner-section" id="plans">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">PLANS</span>
+      <h2 class="section-title-lg">Choose Your Sport Plan</h2>
+      <p class="section-body-lg">All plans included in Orbit and Apex Bundles. Add standalone from $29/mo.</p>
+    </div>
+
+    <div class="sport-plans reveal">
+
+      <!-- Sport Lite -->
+      <div class="speed-tier-card">
+        <div class="sport-ad-badge">Ad-supported</div>
+        <div class="speed-tier-name">Sport Lite</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:var(--space-5)">The essentials</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Football (domestic leagues)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tennis (selected events)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Golf (major championships)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard HD</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>2 screens</li>
+          <li style="color:var(--text-muted)"><svg viewBox="0 0 16 16" fill="none" class="check-icon" style="opacity:0.5"><rect x="1" y="4" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 10h3M10 10h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Includes ad breaks</li>
+        </ul>
+        <div class="speed-tier-price">$29 <small>/mo</small></div>
+        <a href="bundles.html" class="btn btn-ghost btn-full">Get Sport Lite</a>
+        <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:var(--space-3)">Not included in Orbit and Apex Bundles</div>
+      </div>
+
+      <!-- Sport Plus — Featured -->
+      <div class="speed-tier-card featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="sport-ad-badge">Ad-supported</div>
+        <div class="speed-tier-name">Sport Plus</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:var(--space-5)">The complete sports package</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All football incl. Champions League</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>UFC — selected events</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>F1 full season</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tennis — all Grand Slams</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Basketball</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4K Ultra HD</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4 screens</li>
+          <li style="color:var(--text-muted)"><svg viewBox="0 0 16 16" fill="none" class="check-icon" style="opacity:0.5"><rect x="1" y="4" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 10h3M10 10h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Includes ad breaks</li>
+        </ul>
+        <div class="speed-tier-price">$89 <small>/mo</small></div>
+        <a href="bundles.html" class="btn btn-primary btn-full btn-signal">Get Sport Plus</a>
+        <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:var(--space-3)">Included in Orbit and Apex Bundles</div>
+      </div>
+
+      <!-- Sport Ultimate -->
+      <div class="speed-tier-card">
+        <div class="speed-tier-name">Sport Ultimate</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:var(--space-5)">All major leagues. No compromises.</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All major leagues — Premier League, La Liga, NFL, NBA</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>F1 full season + all Grand Slams</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>UFC — main card events</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-angle replays</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Expert analysis + behind-the-scenes</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4K + Dolby Atmos</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>6 screens + downloads</li>
+        </ul>
+        <div class="speed-tier-price">$149 <small>/mo</small></div>
+        <a href="bundles.html" class="btn btn-ghost btn-full">Get Sport Ultimate</a>
+        <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:var(--space-3)">Included in Orbit and Apex Bundles</div>
+      </div>
+
+      <!-- Sport Ultimate Elite -->
+      <div class="speed-tier-card">
+        <div class="plan-badge" style="background:linear-gradient(135deg,#D42AFF,#7B3FFF)">Elite</div>
+        <div class="speed-tier-name">Sport Ultimate Elite</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:var(--space-5)">Every sport. Every event. No exceptions.</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Sport Ultimate</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Every sport, every event — no exceptions</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>UFC — full card incl. prelims</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>8K/4K premium feeds (flagship events)</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-angle live cameras</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full sports archive — decades on demand</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>VIP analyst access &amp; exclusive series</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>8 screens + downloads</li>
+        </ul>
+        <div class="speed-tier-price">$199 <small>/mo</small></div>
+        <a href="bundles.html" class="btn btn-ghost btn-full">Get Sport Ultimate Elite</a>
+        <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:var(--space-3)">Included in Apex Elite, Apex Flex Max &amp; Orbiqa Infinite/Black</div>
+      </div>
+
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:var(--space-7);padding:var(--space-5);background:rgba(27,111,255,0.05);border:1px solid var(--border-active);border-radius:var(--radius-md)">
+      <strong style="color:var(--text-primary)">Already on Orbit or Apex?</strong>
+      <span style="color:var(--text-secondary);font-size:14px;margin-left:var(--space-3)">Orbiqa Sport Plus and Sport Ultimate are included in select bundles at no extra cost.</span>
+      <a href="bundles.html" style="display:inline-block;margin-left:var(--space-4);color:var(--signal-blue);font-size:14px;font-weight:600;text-decoration:none">View Bundles &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<!-- B2B COMMERCIAL RIGHTS -->
+<section class="inner-section inner-section-dark" id="commercial">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">COMMERCIAL RIGHTS</span>
+      <h2 class="section-title-lg">Orbiqa Sport for Business</h2>
+      <p class="section-body-lg">Licensed for public viewing. One contract. Every screen.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5);margin-bottom:var(--space-8)" class="reveal">
+
+      <!-- Hospitality -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-7);display:flex;flex-direction:column;gap:var(--space-4)">
+        <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(27,111,255,0.1);display:flex;align-items:center;justify-content:center">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/>
+          </svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:4px">Pubs &amp; Bars</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Public viewing licence for licensed premises. Unlimited screens, full crowd atmosphere, no per-event fees.</div>
+        </div>
+        <ul class="plan-features" style="text-align:left;font-size:13px">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All Sport Ultimate content</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited simultaneous screens</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Commercial audio licence included</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated B2B support line</li>
+        </ul>
+        <div style="font-family:var(--font-display);font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">From $299<small style="-webkit-text-fill-color:var(--text-muted);font-size:14px;font-weight:400">/mo</small></div>
+        <a href="business.html#contact" class="btn btn-ghost btn-full">Get a Quote</a>
+      </div>
+
+      <!-- Hotels & Hospitality -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-active);border-radius:var(--radius-lg);padding:var(--space-7);display:flex;flex-direction:column;gap:var(--space-4);position:relative">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--grad-brand);color:#fff;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 18px;border-radius:var(--radius-full);white-space:nowrap">Most Licensed</div>
+        <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(123,63,255,0.1);display:flex;align-items:center;justify-content:center">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:4px">Hotels &amp; Hospitality</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Per-room or whole-property licensing for hotels, resorts, and serviced apartments. Billed by room count.</div>
+        </div>
+        <ul class="plan-features" style="text-align:left;font-size:13px">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sport Ultimate Elite content</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Per-room delivery via Orbiqa TV Box</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-language commentary options</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Branded welcome screen</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SLA-backed uptime guarantee</li>
+        </ul>
+        <div style="font-family:var(--font-display);font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">From $9<small style="-webkit-text-fill-color:var(--text-muted);font-size:14px;font-weight:400">/room/mo</small></div>
+        <a href="business.html#contact" class="btn btn-primary btn-full btn-signal">Get a Quote</a>
+      </div>
+
+      <!-- Stadiums & Enterprise -->
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-7);display:flex;flex-direction:column;gap:var(--space-4)">
+        <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(212,42,255,0.1);display:flex;align-items:center;justify-content:center">
+          <svg viewBox="0 0 24 24" fill="none" width="24" height="24" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M2 12c0 3.31 4.48 6 10 6s10-2.69 10-6"/><path d="M12 6v12"/>
+          </svg>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);margin-bottom:4px">Stadiums &amp; Enterprise</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Custom licensing for stadiums, arenas, airports, airlines, and large-scale commercial deployments.</div>
+        </div>
+        <ul class="plan-features" style="text-align:left;font-size:13px">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full Sport Ultimate Elite catalogue</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom feed &amp; branding integration</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sub-licensing rights available</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated infrastructure team</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Negotiated annual contracts</li>
+        </ul>
+        <div style="font-family:var(--font-display);font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Custom pricing</div>
+        <a href="business.html#contact" class="btn btn-ghost btn-full">Talk to Sales</a>
+      </div>
+
+    </div>
+
+    <!-- Commercial stats bar -->
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-5);padding:var(--space-6);background:rgba(27,111,255,0.04);border:1px solid var(--border-active);border-radius:var(--radius-lg);text-align:center">
+      <div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">12,000+</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px">Licensed venues worldwide</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">190</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px">Countries covered</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">99.99%</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px">Commercial uptime SLA</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:32px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">24/7</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:4px">Dedicated B2B support</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">Sport Questions Answered</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">Is UFC included in my TV plan?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">UFC events are available with Sport Plus and Sport Ultimate plans, and with the UFC Pass add-on for Apex bundle subscribers. Sport Lite does not include UFC. If you're on TV Premium or Prestige without a Sport plan, you can add Orbiqa Sport separately from $29/month.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I watch on multiple screens?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Sport Lite supports 2 simultaneous screens, Sport Plus supports 4, Sport Ultimate supports 6 screens plus offline downloads, and Sport Ultimate Elite supports 8 screens plus downloads. Additional screens can be added to any plan for $3/month per extra screen.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are events available on replay?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. All events are available to watch on demand for 30 days after the live broadcast. Sport Ultimate subscribers also get multi-angle replays for selected events, letting you watch the same match from different camera positions.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does Orbiqa Sport include international events?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Orbiqa Sport covers international events across all sports — including international football tournaments, Grand Slam tennis, Formula 1 races in 24 countries, Olympic Games, and global MMA events. Coverage is available in all 190+ countries where Orbiqa operates.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I add Orbiqa Sport to my plan?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">You can add Orbiqa Sport in the MyOrbiqa app under Account → Add-ons → Sport, or by visiting any Orbiqa store. If you're on an Orbit or Apex bundle, Sport Plus is already included. Activation is instant — you'll have access to live events immediately after subscribing.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">&#120143;</a><a href="#" class="social-link">in</a><a href="#" class="social-link">&#9723;</a><a href="#" class="social-link">&#9654;</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="sport.html">Orbiqa Sport</a></li><li><a href="devices.html">Devices</a></li><li><a href="bundles.html">Bundles</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>&#169; 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

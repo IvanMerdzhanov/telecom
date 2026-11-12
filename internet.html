@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Fiber — Ultrafast Home Internet</title>
+  <meta name="description" content="Orbiqa Fiber delivers ultrafast home internet up to 10 Gbps with symmetric speeds, WiFi 7, and self-healing network technology.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="#plans" class="btn btn-primary">Get Started</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">ORBIQA FIBER</span>
+    <h1 class="page-hero-title">Not Fast.<br><span class="gradient-text">Impossibly Fast.</span></h1>
+    <p class="page-hero-sub">10 Gbps symmetrical fiber internet. The speed of tomorrow, available today. Zero throttling, zero compromises.</p>
+    <div class="page-hero-actions">
+      <a href="#check" class="btn btn-primary btn-signal">Check Your Address</a>
+      <a href="#plans" class="btn btn-ghost">See Plans</a>
+    </div>
+  </div>
+</section>
+
+<!-- ADDRESS CHECK -->
+<section class="coverage-section" id="check" style="padding:4rem 0;">
+  <div class="container">
+    <div class="coverage-content reveal" style="text-align:center;max-width:680px;margin:0 auto">
+      <span class="section-eyebrow">COVERAGE CHECK</span>
+      <h2 class="section-title-lg">Is Fiber Available<br>at Your Address?</h2>
+      <form class="coverage-form" style="margin-top:2rem">
+        <div class="coverage-input-wrap">
+          <svg class="coverage-search-icon" viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="#5A6080" stroke-width="1.5"/><path d="M17 17l4 4" stroke="#5A6080" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <input type="text" class="coverage-input" placeholder="Enter your address or postcode..." autocomplete="street-address">
+          <button type="submit" class="coverage-submit btn btn-primary btn-signal">Check Coverage</button>
+        </div>
+      </form>
+      <div class="coverage-result" id="coverageResult" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEED TIERS -->
+<section class="inner-section inner-section-dark" id="plans">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FIBER PLANS</span>
+      <h2 class="section-title-lg">Choose Your Speed</h2>
+      <p class="section-body-lg">All plans include free installation and 24/7 technical support. Add a <a href="devices.html" style="color:var(--signal-blue);text-decoration:none;font-weight:600">SmartHub Pro or SmartHub Max</a> — available to purchase or on monthly payments.</p>
+    </div>
+    <div class="speed-tiers">
+      <div class="speed-tier-card reveal" data-delay="0">
+        <div class="speed-tier-name">Essential</div>
+        <div class="speed-tier-speed">500</div>
+        <div class="speed-tier-unit">Mbps symmetric</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>500 Mbps download &amp; upload</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 50 devices</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free installation</li>
+        </ul>
+        <div class="speed-tier-price">$39 <small>/mo</small></div>
+        <a href="#check" class="btn btn-ghost btn-full">Get Essential</a>
+      </div>
+      <div class="speed-tier-card featured reveal" data-delay="100">
+        <div class="plan-badge">Best Value</div>
+        <div class="speed-tier-name">Ultra</div>
+        <div class="speed-tier-speed">1</div>
+        <div class="speed-tier-unit">Gbps symmetric</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 Gbps download &amp; upload</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Compatible with SmartHub Pro &amp; Max</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 150 devices</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Self-healing technology</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
+        </ul>
+        <div class="speed-tier-price">$69 <small>/mo</small></div>
+        <a href="#check" class="btn btn-primary btn-full btn-signal">Get Ultra</a>
+      </div>
+      <div class="speed-tier-card reveal" data-delay="200">
+        <div class="speed-tier-name">Apex</div>
+        <div class="speed-tier-speed">10</div>
+        <div class="speed-tier-unit">Gbps symmetric</div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10 Gbps download &amp; upload</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited devices</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated network engineer</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>24/7 priority support line</li>
+        </ul>
+        <div class="speed-tier-price">$189 <small>/mo</small></div>
+        <a href="#check" class="btn btn-ghost btn-full">Get Apex</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">INCLUDED</span>
+      <h2 class="section-title-lg">Everything You Need.<br>Nothing You Don't.</h2>
+    </div>
+    <div class="feature-grid">
+<div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M38 16A16 16 0 1016 38" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><polyline points="38,8 38,16 30,16" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="feature-box-title">Self-Healing Network</div><div class="feature-box-desc">Our AI detects and reroutes around issues before you notice. 99.99% uptime guarantee backed by SLA.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><line x1="24" y1="6" x2="24" y2="42" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="42" x2="38" y2="42" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="10" x2="38" y2="10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><path d="M10 10l-6 12h12L10 10zM38 10l-6 12h12L38 10z" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="feature-box-title">Symmetric Speeds</div><div class="feature-box-desc">Upload and download at the same speed. Video calls, cloud backup, and content creation without compromise.</div></div>
+      <div class="feature-box reveal" data-delay="0"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><circle cx="24" cy="24" r="20" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="10" y1="10" x2="38" y2="38" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div><div class="feature-box-title">Zero Throttling</div><div class="feature-box-desc">We never slow your connection based on usage, time of day, or content type. Your speed is your speed.</div></div>
+      <div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M36 8a8 8 0 00-10 10L10 34a4 4 0 006 6l16-16a8 8 0 0010-10l-6 6-3-3 6-6-3-3z" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/></svg></div><div class="feature-box-title">Free Installation</div><div class="feature-box-desc">Our certified engineers handle everything. Fiber to your wall plate, router configured, all devices connected.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M4 24c0 0 8-14 20-14s20 14 20 14-8 14-20 14S4 24 4 24z" stroke="url(#brandGradH)" stroke-width="1.5"/><circle cx="24" cy="24" r="6" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div><div class="feature-box-title">24/7 Monitoring</div><div class="feature-box-desc">Your connection is monitored round the clock. We'll often call you before you've noticed a problem exists.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTALLATION PROCESS -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">INSTALLATION</span>
+      <h2 class="section-title-lg">Go Live in Hours,<br>Not Days.</h2>
+    </div>
+    <div class="process-steps">
+      <div class="step reveal" data-delay="0">
+        <div class="step-num">1</div>
+        <div class="step-title">Check Your Address</div>
+        <div class="step-desc">Enter your postcode above. We'll instantly confirm if fiber is available and which speeds are supported.</div>
+      </div>
+      <div class="step reveal" data-delay="100">
+        <div class="step-num">2</div>
+        <div class="step-title">Book Installation</div>
+        <div class="step-desc">Choose a 2-hour appointment window that suits you. Our engineers arrive on time, every time.</div>
+      </div>
+      <div class="step reveal" data-delay="200">
+        <div class="step-num">3</div>
+        <div class="step-title">Go Live in Hours</div>
+        <div class="step-desc">Fiber installed, every device connected and tested. You're online with full speed within hours of booking.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SMART HOME -->
+<section class="inner-section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div class="reveal">
+        <span class="section-eyebrow">SMART HOME</span>
+        <h2 class="section-title-lg">Works With Everything You Own.</h2>
+        <p class="section-body-lg">The SmartHub Pro and SmartHub Max integrate natively with your smart home ecosystem. Voice commands, automation, and device management — all through the MyOrbiqa app.</p>
+        <div class="platform-icons-grid" style="margin-top:1.5rem">
+          <div class="platform-icon-box">Google Home</div>
+          <div class="platform-icon-box">Amazon Alexa</div>
+          <div class="platform-icon-box">Apple HomeKit</div>
+          <div class="platform-icon-box">Samsung SmartThings</div>
+          <div class="platform-icon-box">Matter</div>
+          <div class="platform-icon-box">Thread</div>
+        </div>
+      </div>
+      <div class="reveal" data-delay="200" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2.5rem;text-align:center">
+        <div style="font-size:72px;margin-bottom:1rem"><svg viewBox="0 0 48 48" fill="none" width="56" height="56"><path d="M6 22L24 6l18 16v22H6V22z" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/><rect x="18" y="30" width="12" height="16" rx="2" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div style="font-size:22px;font-weight:800;color:var(--text-primary);margin-bottom:0.5rem">Smart Home Ready</div>
+        <div style="font-size:15px;color:var(--text-secondary);line-height:1.6">Control your entire home network — guest access, parental controls, device priority, and more — all from the MyOrbiqa app.</div>
+        <a href="#" class="btn btn-primary btn-signal" style="margin-top:1.5rem">Download the App</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLE -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">BUNDLES</span>
+      <h2 class="section-title-lg">Better Together.</h2>
+      <p class="section-body-lg">Add Mobile and TV to your fiber plan and save up to $68/mo. One bill, one network.</p>
+    </div>
+    <div class="bundle-grid reveal">
+
+      <!-- Signal Essential -->
+      <div class="bundle-card">
+        <div>
+          <div class="bundle-name">Signal Essential</div>
+          <div class="bundle-tagline">Everything you need, nothing you don't.</div>
+        </div>
+        <div>
+          <div class="bundle-price-row">
+            <span class="bundle-price-cur">$</span>
+            <span class="bundle-price">92</span>
+            <span class="bundle-price-per">/mo</span>
+          </div>
+          <div style="margin-top:6px">
+            <span class="bundle-was">was $107</span>
+            <span class="bundle-save">Save $15</span>
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:4px">First 3 months promotional price</div>
+        </div>
+        <div class="bundle-includes">
+          <div class="bundle-includes-title">What's included</div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/></svg>
+            Signal Mobile: 50GB · 5G · 60 countries
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+            Essential Fiber: 500 Mbps symmetrical
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><polyline points="8,21 12,17 16,21"/></svg>
+            TV Basic: 500+ live channels, 50hrs DVR
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Single bill, single support line
+          </div>
+        </div>
+        <a href="bundles.html" class="btn btn-ghost btn-full btn-signal">Get Signal Essential</a>
+      </div>
+
+      <!-- Orbit Essential (Featured) -->
+      <div class="bundle-card featured-bundle" style="margin-top:-20px">
+        <div class="bundle-badge">Most Popular</div>
+        <div>
+          <div class="bundle-name">Orbit Essential</div>
+          <div class="bundle-tagline">The complete Orbiqa experience.</div>
+        </div>
+        <div>
+          <div class="bundle-price-row">
+            <span class="bundle-price-cur">$</span>
+            <span class="bundle-price">175</span>
+            <span class="bundle-price-per">/mo</span>
+          </div>
+          <div style="margin-top:6px">
+            <span class="bundle-was">was $207</span>
+            <span class="bundle-save">Save $32</span>
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:4px">First 3 months promotional price</div>
+        </div>
+        <div class="bundle-includes">
+          <div class="bundle-includes-title">What's included</div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/></svg>
+            Orbit Mobile: Unlimited · 5G Ultra · 190 countries
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+            Ultra Fiber: 1 Gbps symmetrical
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><polyline points="8,21 12,17 16,21"/></svg>
+            TV Premium: All channels + 2 leagues of your choice, 200hrs DVR
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            Priority customer support
+          </div>
+        </div>
+        <a href="bundles.html" class="btn btn-primary btn-full btn-signal">Get Orbit Essential</a>
+      </div>
+
+      <!-- Apex Essential -->
+      <div class="bundle-card">
+        <div>
+          <div class="bundle-name">Apex Essential</div>
+          <div class="bundle-tagline">Maximum everything. Zero compromise.</div>
+        </div>
+        <div>
+          <div class="bundle-price-row">
+            <span class="bundle-price-cur">$</span>
+            <span class="bundle-price">339</span>
+            <span class="bundle-price-per">/mo</span>
+          </div>
+          <div style="margin-top:6px">
+            <span class="bundle-was">was $407</span>
+            <span class="bundle-save">Save $68</span>
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:4px">First 3 months promotional price</div>
+        </div>
+        <div class="bundle-includes">
+          <div class="bundle-includes-title">What's included</div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/></svg>
+            Apex Mobile: Unlimited Priority · 5G Ultra + mmWave
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+            Apex Fiber: 10 Gbps symmetrical
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><polyline points="8,21 12,17 16,21"/></svg>
+            TV Prestige: All channels + 5 leagues + streaming apps, 500hrs DVR
+          </div>
+          <div class="bundle-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            Dedicated account manager
+          </div>
+        </div>
+        <a href="bundles.html" class="btn btn-ghost btn-full btn-signal">Get Apex Essential</a>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="bundles.html" class="btn btn-ghost">View Full Bundle Comparison →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">Fiber Questions Answered</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">How fast is 10 Gbps really?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">10 Gbps is 10,000 Megabits per second — fast enough to download a 4K movie in under 4 seconds, run 1,000 simultaneous HD video calls, or back up an entire laptop to the cloud in minutes. Even in a household with 50 devices streaming simultaneously, you'll never notice a slowdown.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need a router?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, you'll need a router to connect your devices. We recommend the <a href="devices.html" style="color:var(--signal-blue);text-decoration:none;font-weight:600">SmartHub Pro ($299) or SmartHub Max ($399)</a>, both available outright or on monthly payments. If you prefer to use your own hardware, we'll provide the ONT (optical network terminal) and you connect to it directly.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How long does installation take?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">A standard installation takes 2–4 hours from start to finish. Our engineer runs the fiber cable from the street to your home, installs the ONT, and connects and tests every device you want online.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I keep my current email address?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">If your email is through Gmail, Outlook, or another third-party provider, it won't be affected at all. If you use an @yourprovider.net email from your old ISP, we recommend migrating to a Gmail or Outlook account before switching — we'll guide you through it free of charge.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a contract?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No contracts are required. All Orbiqa Fiber plans are rolling monthly. Cancel with 30 days' notice at any time. If you switch away within the first 30 days, we'll refund your first month's payment in full.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="inner-section inner-section-dark" style="text-align:center">
+  <div class="container" style="max-width:680px">
+    <span class="section-eyebrow reveal">CHECK YOUR ADDRESS</span>
+    <h2 class="section-title-lg reveal">Ready to Experience<br><span class="gradient-text">Impossibly Fast?</span></h2>
+    <form class="coverage-form reveal" style="margin-top:2rem">
+      <div class="coverage-input-wrap">
+        <svg class="coverage-search-icon" viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="#5A6080" stroke-width="1.5"/><path d="M17 17l4 4" stroke="#5A6080" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="text" class="coverage-input" placeholder="Enter your address or postcode...">
+        <button type="submit" class="coverage-submit btn btn-primary btn-signal">Check Coverage</button>
+      </div>
+    </form>
+    <p class="final-trust reveal" style="margin-top:1.5rem">Free installation · No contracts · 30-day guarantee</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">◻</a><a href="#" class="social-link">▶</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

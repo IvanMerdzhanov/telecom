@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Devices — Phones, Routers &amp; Accessories</title>
+  <meta name="description" content="Shop the latest smartphones, WiFi routers, tablets, and accessories from Orbiqa. Flexible financing and trade-in available.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="mobile.html" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="mobile.html" class="btn btn-primary">Get Started</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero" style="background:linear-gradient(135deg,#070A1E 0%,#0A1230 50%,#070A1E 100%)">
+  <div class="page-hero-overlay" style="background:radial-gradient(ellipse 60% 70% at 50% 50%,rgba(27,111,255,0.07) 0%,transparent 70%)"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">ORBIQA DEVICES</span>
+    <h1 class="page-hero-title">Start With the<br><span class="gradient-text">Right Device.</span></h1>
+    <p class="page-hero-sub">The latest phones, routers, and accessories — with flexible financing and trade-in.</p>
+    <div class="page-hero-actions">
+      <a href="#catalog" class="btn btn-primary btn-signal">Browse Devices</a>
+      <a href="#tradein" class="btn btn-ghost">Trade In</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEVICE CATALOG -->
+<section class="inner-section" id="catalog">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="device-filters reveal">
+      <button class="device-filter-btn active" data-filter="all">All</button>
+      <button class="device-filter-btn" data-filter="phones">Phones</button>
+      <button class="device-filter-btn" data-filter="routers">Routers &amp; WiFi</button>
+      <button class="device-filter-btn" data-filter="tablets">Tablets</button>
+      <button class="device-filter-btn" data-filter="wearables">Wearables</button>
+      <button class="device-filter-btn" data-filter="accessories">Accessories</button>
+      <button class="device-filter-btn" data-filter="gaming">Gaming</button>
+    </div>
+
+    <!-- Device Grid -->
+    <div class="device-grid reveal">
+
+      <!-- iPhone 16 Pro Max — Featured -->
+      <div class="device-card device-featured" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Apple</div>
+          <div class="device-name">iPhone 16 Pro Max</div>
+          <div class="device-spec">256 GB · Titanium · 5G Ultra</div>
+          <div class="device-colors">
+            <div class="device-color-dot selected" style="background:#1C1C1E" title="Black Titanium"></div>
+            <div class="device-color-dot" style="background:#F5F5F0" title="White Titanium"></div>
+            <div class="device-color-dot" style="background:#C8A96E" title="Desert Titanium"></div>
+            <div class="device-color-dot" style="background:#8E8E93" title="Natural Titanium"></div>
+          </div>
+          <div class="device-price-row">
+            <span class="device-price">$1,199</span>
+            <span class="device-monthly">or $49.96/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- iPhone 16 -->
+      <div class="device-card" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Apple</div>
+          <div class="device-name">iPhone 16</div>
+          <div class="device-spec">128 GB · 5G</div>
+          <div class="device-colors">
+            <div class="device-color-dot selected" style="background:#1C1C1E"></div>
+            <div class="device-color-dot" style="background:#F5F5F0"></div>
+            <div class="device-color-dot" style="background:#3A7BD5"></div>
+          </div>
+          <div class="device-price-row">
+            <span class="device-price">$799</span>
+            <span class="device-monthly">or $33.29/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy S25 Ultra -->
+      <div class="device-card" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Samsung</div>
+          <div class="device-name">Galaxy S25 Ultra</div>
+          <div class="device-spec">256 GB · Titanium · 5G Ultra</div>
+          <div class="device-colors">
+            <div class="device-color-dot selected" style="background:#1A1A2E"></div>
+            <div class="device-color-dot" style="background:#E8DCC8"></div>
+            <div class="device-color-dot" style="background:#5B7C5A"></div>
+          </div>
+          <div class="device-price-row">
+            <span class="device-price">$1,299</span>
+            <span class="device-monthly">or $54.13/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Pixel 9 Pro -->
+      <div class="device-card" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Google</div>
+          <div class="device-name">Pixel 9 Pro</div>
+          <div class="device-spec">128 GB · 5G</div>
+          <div class="device-colors">
+            <div class="device-color-dot selected" style="background:#1A1A1A"></div>
+            <div class="device-color-dot" style="background:#F2F0EB"></div>
+            <div class="device-color-dot" style="background:#C8856A"></div>
+          </div>
+          <div class="device-price-row">
+            <span class="device-price">$999</span>
+            <span class="device-monthly">or $41.63/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OnePlus 13 -->
+      <div class="device-card" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">OnePlus</div>
+          <div class="device-name">OnePlus 13</div>
+          <div class="device-spec">256 GB · 5G Ultra</div>
+          <div class="device-colors">
+            <div class="device-color-dot selected" style="background:#0A0A14"></div>
+            <div class="device-color-dot" style="background:#E8E0D0"></div>
+          </div>
+          <div class="device-price-row">
+            <span class="device-price">$699</span>
+            <span class="device-monthly">or $29.13/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy A55 -->
+      <div class="device-card" data-category="phones">
+        <div class="device-img device-img-phone">
+          <svg class="device-silhouette" viewBox="0 0 70 130" fill="none">
+            <rect x="5" y="2" width="60" height="126" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="8" width="30" height="6" rx="3" fill="rgba(100,160,255,0.2)"/>
+            <rect x="8" y="20" width="54" height="86" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="25" y="118" width="20" height="4" rx="2" fill="rgba(100,160,255,0.2)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Samsung</div>
+          <div class="device-name">Galaxy A55</div>
+          <div class="device-spec">128 GB · 5G</div>
+          <div class="device-price-row">
+            <span class="device-price">$449</span>
+            <span class="device-monthly">or $18.71/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbiqa SmartHub Pro -->
+      <div class="device-card" data-category="routers">
+        <div class="device-img device-img-router">
+          <img src="pictures/SmartHub_Pro.png" alt="Orbiqa SmartHub Pro" style="width:100%;height:100%;object-fit:contain">
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Orbiqa</div>
+          <div class="device-name">SmartHub Pro</div>
+          <div class="device-spec">WiFi 7 · Tri-band · Whole home</div>
+          <div class="device-price-row">
+            <span class="device-price">$299</span>
+            <span class="device-monthly">or $12.46/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbiqa SmartHub Max -->
+      <div class="device-card" data-category="routers">
+        <div class="device-img device-img-router">
+          <img src="pictures/SmartHub_Max.png" alt="Orbiqa SmartHub Max" style="width:100%;height:100%;object-fit:contain">
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Orbiqa</div>
+          <div class="device-name">SmartHub Max</div>
+          <div class="device-spec">WiFi 7 · Quad-band · Up to 10 Gbps</div>
+          <div class="device-price-row">
+            <span class="device-price">$399</span>
+            <span class="device-monthly">or $16.63/mo</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- iPad Pro 13" -->
+      <div class="device-card" data-category="tablets">
+        <div class="device-img device-img-tablet">
+          <svg class="device-silhouette" viewBox="0 0 100 130" fill="none">
+            <rect x="5" y="5" width="90" height="120" rx="10" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="12" y="14" width="76" height="98" rx="4" fill="rgba(27,111,255,0.08)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Apple</div>
+          <div class="device-name">iPad Pro 13"</div>
+          <div class="device-spec">256 GB · M4 · 5G</div>
+          <div class="device-price-row">
+            <span class="device-price">$1,299</span>
+            <span class="device-monthly">or $54.13/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy Tab S10+ -->
+      <div class="device-card" data-category="tablets">
+        <div class="device-img device-img-tablet">
+          <svg class="device-silhouette" viewBox="0 0 100 130" fill="none">
+            <rect x="5" y="5" width="90" height="120" rx="10" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="12" y="14" width="76" height="98" rx="4" fill="rgba(27,111,255,0.08)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Samsung</div>
+          <div class="device-name">Galaxy Tab S10+</div>
+          <div class="device-spec">256 GB · 5G</div>
+          <div class="device-price-row">
+            <span class="device-price">$999</span>
+            <span class="device-monthly">or $41.63/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apple Watch Series 10 -->
+      <div class="device-card" data-category="wearables">
+        <div class="device-img device-img-wearable">
+          <svg class="device-silhouette" viewBox="0 0 70 90" fill="none">
+            <rect x="15" y="20" width="40" height="50" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="28" width="30" height="34" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="22" y="5" width="26" height="18" rx="4" stroke="rgba(100,160,255,0.2)" stroke-width="1.5" fill="none"/>
+            <rect x="22" y="70" width="26" height="18" rx="4" stroke="rgba(100,160,255,0.2)" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Apple</div>
+          <div class="device-name">Watch Series 10</div>
+          <div class="device-spec">46mm · GPS + Cellular</div>
+          <div class="device-price-row">
+            <span class="device-price">$399</span>
+            <span class="device-monthly">or $16.63/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy Watch7 -->
+      <div class="device-card" data-category="wearables">
+        <div class="device-img device-img-wearable">
+          <svg class="device-silhouette" viewBox="0 0 70 90" fill="none">
+            <rect x="15" y="20" width="40" height="50" rx="12" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="28" width="30" height="34" rx="4" fill="rgba(27,111,255,0.08)"/>
+            <rect x="22" y="5" width="26" height="18" rx="4" stroke="rgba(100,160,255,0.2)" stroke-width="1.5" fill="none"/>
+            <rect x="22" y="70" width="26" height="18" rx="4" stroke="rgba(100,160,255,0.2)" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Samsung</div>
+          <div class="device-name">Galaxy Watch7</div>
+          <div class="device-spec">44mm · LTE</div>
+          <div class="device-price-row">
+            <span class="device-price">$299</span>
+            <span class="device-monthly">or $12.46/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AirPods Pro 2 -->
+      <div class="device-card" data-category="accessories">
+        <div class="device-img device-img-accessory">
+          <svg class="device-silhouette" viewBox="0 0 80 80" fill="none">
+            <rect x="10" y="15" width="60" height="50" rx="16" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <circle cx="30" cy="38" r="8" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.08)"/>
+            <circle cx="50" cy="38" r="8" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.08)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Apple</div>
+          <div class="device-name">AirPods Pro 2</div>
+          <div class="device-spec">Active Noise Cancellation · USB-C</div>
+          <div class="device-price-row">
+            <span class="device-price">$249</span>
+            <span class="device-monthly">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy Buds3 Pro -->
+      <div class="device-card" data-category="accessories">
+        <div class="device-img device-img-accessory">
+          <svg class="device-silhouette" viewBox="0 0 80 80" fill="none">
+            <rect x="10" y="15" width="60" height="50" rx="16" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <circle cx="30" cy="38" r="8" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.08)"/>
+            <circle cx="50" cy="38" r="8" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.08)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Samsung</div>
+          <div class="device-name">Galaxy Buds3 Pro</div>
+          <div class="device-spec">Hi-Fi Audio · ANC</div>
+          <div class="device-price-row">
+            <span class="device-price">$199</span>
+            <span class="device-monthly">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbiqa TV Box -->
+      <div class="device-card" data-category="accessories">
+        <div class="device-img device-img-accessory">
+          <img src="pictures/tv_box.png" alt="Orbiqa TV Box" style="width:100%;height:100%;object-fit:contain">
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Orbiqa</div>
+          <div class="device-name">TV Box</div>
+          <div class="device-spec">4K HDR · Dolby Atmos · HDMI · One-time purchase</div>
+          <div class="device-price-row">
+            <span class="device-price">$49</span>
+            <span class="device-monthly">one-time purchase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PlayStation 5 Pro -->
+      <div class="device-card" data-category="gaming">
+        <div class="device-img device-img-accessory">
+          <svg class="device-silhouette" viewBox="0 0 80 80" fill="none">
+            <rect x="12" y="22" width="56" height="36" rx="6" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="30" width="16" height="20" rx="3" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.04)"/>
+            <rect x="44" y="30" width="16" height="20" rx="3" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.04)"/>
+            <line x1="36" y1="40" x2="44" y2="40" stroke="rgba(100,160,255,0.3)" stroke-width="1.5"/>
+            <circle cx="52" cy="36" r="2" stroke="rgba(100,160,255,0.4)" stroke-width="1.2" fill="none"/>
+            <circle cx="58" cy="40" r="2" stroke="rgba(100,160,255,0.4)" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Sony</div>
+          <div class="device-name">PlayStation 5 Pro</div>
+          <div class="device-spec">8K Gaming · 2× GPU Performance · 2TB SSD · Ray Tracing</div>
+          <div class="device-price-row">
+            <span class="device-price">$699</span>
+            <span class="device-monthly">or $29.13/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PlayStation 5 -->
+      <div class="device-card" data-category="gaming">
+        <div class="device-img device-img-accessory">
+          <svg class="device-silhouette" viewBox="0 0 80 80" fill="none">
+            <rect x="12" y="22" width="56" height="36" rx="6" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="20" y="30" width="16" height="20" rx="3" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.04)"/>
+            <rect x="44" y="30" width="16" height="20" rx="3" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="rgba(27,111,255,0.04)"/>
+            <line x1="36" y1="40" x2="44" y2="40" stroke="rgba(100,160,255,0.3)" stroke-width="1.5"/>
+            <circle cx="52" cy="36" r="2" stroke="rgba(100,160,255,0.4)" stroke-width="1.2" fill="none"/>
+            <circle cx="58" cy="40" r="2" stroke="rgba(100,160,255,0.4)" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Sony</div>
+          <div class="device-name">PlayStation 5</div>
+          <div class="device-spec">4K Gaming · 120fps · 825GB SSD · Haptic DualSense</div>
+          <div class="device-price-row">
+            <span class="device-price">$499</span>
+            <span class="device-monthly">or $20.79/mo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orbiqa 67W Fast Charger -->
+      <div class="device-card" data-category="accessories">
+        <div class="device-img device-img-accessory">
+          <svg class="device-silhouette" viewBox="0 0 80 80" fill="none">
+            <rect x="20" y="10" width="40" height="50" rx="8" stroke="rgba(100,160,255,0.4)" stroke-width="2" fill="rgba(27,111,255,0.06)"/>
+            <rect x="32" y="60" width="16" height="12" rx="2" stroke="rgba(100,160,255,0.3)" stroke-width="1.5" fill="none"/>
+            <polygon points="40,25 33,38 39,38 37,55 47,38 41,38" stroke="rgba(100,160,255,0.4)" stroke-width="1" fill="rgba(27,111,255,0.15)"/>
+          </svg>
+        </div>
+        <div class="device-info">
+          <div class="device-brand">Orbiqa</div>
+          <div class="device-name">67W Fast Charger</div>
+          <div class="device-spec">USB-C · Compatible with all devices</div>
+          <div class="device-price-row">
+            <span class="device-price">$49</span>
+            <span class="device-monthly">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /device-grid -->
+  </div>
+</section>
+
+<!-- TRADE-IN SECTION -->
+<section class="inner-section inner-section-dark" id="tradein">
+  <div class="container">
+    <div class="tradein-section reveal">
+      <div>
+        <span class="section-eyebrow" style="text-align:left">TRADE IN</span>
+        <h2 class="section-title-lg" style="text-align:left">Trade In.<br>Save More.</h2>
+        <p class="section-body-lg" style="text-align:left">Get up to $800 off your new device when you trade in your old one. Any condition considered — even cracked screens.</p>
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-5)">
+          <input type="text" class="coverage-input" placeholder="Enter your device model..." style="flex:1">
+          <button class="btn btn-primary btn-signal">Get Trade-In Value</button>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <div class="tradein-value">$800</div>
+        <div style="font-size:16px;font-weight:600;color:var(--text-secondary);margin-top:var(--space-2)">Maximum trade-in value</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:var(--space-2)">Values vary by device model and condition.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCING SECTION -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FINANCING</span>
+      <h2 class="section-title-lg">Flexible Payment Options</h2>
+      <p class="section-body-lg">Get your device today, pay over time — at no extra cost.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)" class="reveal">
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-7);text-align:center">
+        <div style="display:flex;justify-content:center;margin-bottom:var(--space-4)">
+          <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><rect x="4" y="12" width="40" height="28" rx="6" stroke="url(#brandGradH)" stroke-width="1.5" fill="rgba(27,111,255,0.06)"/><line x1="4" y1="22" x2="44" y2="22" stroke="url(#brandGradH)" stroke-width="1.5"/><rect x="10" y="28" width="10" height="5" rx="1" fill="rgba(27,111,255,0.2)"/></svg>
+        </div>
+        <div style="font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">0% APR</div>
+        <div style="font-size:15px;font-weight:600;color:var(--text-primary);margin-top:var(--space-2)">For 24 months</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:var(--space-2)">No interest. No hidden fees. Spread the cost over 2 years at zero percent.</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-7);text-align:center">
+        <div style="display:flex;justify-content:center;margin-bottom:var(--space-4)">
+          <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><circle cx="24" cy="24" r="18" stroke="url(#brandGradH)" stroke-width="1.5" fill="rgba(27,111,255,0.06)"/><path d="M24 14v10l6 4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <div style="font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">No deposit</div>
+        <div style="font-size:15px;font-weight:600;color:var(--text-primary);margin-top:var(--space-2)">Required</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:var(--space-2)">Get your device with nothing to pay upfront. First payment after 30 days.</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-7);text-align:center">
+        <div style="display:flex;justify-content:center;margin-bottom:var(--space-4)">
+          <svg viewBox="0 0 48 48" fill="none" width="48" height="48"><polyline points="10,36 24,12 38,36" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/><line x1="16" y1="28" x2="32" y2="28" stroke="url(#brandGradH)" stroke-width="1.5"/></svg>
+        </div>
+        <div style="font-size:28px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Upgrade</div>
+        <div style="font-size:15px;font-weight:600;color:var(--text-primary);margin-top:var(--space-2)">After 12 months</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:var(--space-2)">Upgrade to a new device after 12 months. Trade in, start fresh. No penalty.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="inner-section inner-section-dark" style="text-align:center">
+  <div class="container" style="max-width:600px">
+    <span class="section-eyebrow reveal">NEED HELP?</span>
+    <h2 class="section-title-lg reveal">Need help choosing?</h2>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">Our team can recommend the right device for your needs and budget. Visit a store or chat online — no pressure, just advice.</p>
+    <div class="reveal" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="support.html" class="btn btn-primary btn-signal">Get Device Advice</a>
+      <a href="contact.html" class="btn btn-ghost">Find a Store</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">&#120143;</a><a href="#" class="social-link">in</a><a href="#" class="social-link">&#9723;</a><a href="#" class="social-link">&#9654;</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="sport.html">Orbiqa Sport</a></li><li><a href="devices.html">Devices</a></li><li><a href="bundles.html">Bundles</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>&#169; 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const filterBtns = document.querySelectorAll('.device-filter-btn');
+  const deviceCards = document.querySelectorAll('.device-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      deviceCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

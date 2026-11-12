@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa TV — Every Story, One Screen</title>
+  <meta name="description" content="Orbiqa TV delivers 500+ live channels, 80,000+ hours on demand, 4K Ultra HD, Dolby Vision, and every major streaming platform — all in one plan.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="#plans" class="btn btn-primary">Get Started</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow">ORBIQA TV</span>
+    <h1 class="page-hero-title">Every Story.<br><span class="gradient-text">One Screen.</span></h1>
+    <p class="page-hero-sub">500+ live channels, 80,000+ hours on demand, 4K Ultra HD with Dolby Vision — plus every major streaming app already built in.</p>
+    <div class="page-hero-actions">
+      <a href="#plans" class="btn btn-primary btn-signal">Explore Plans</a>
+      <a href="#channels" class="btn btn-ghost">See All Channels</a>
+    </div>
+  </div>
+</section>
+
+<!-- TV PLANS -->
+<section class="inner-section" id="plans">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">TV PLANS</span>
+      <h2 class="section-title-lg">Choose Your Screen Package</h2>
+      <p class="section-body-lg">Every plan includes the Orbiqa TV app, cloud DVR, and up to 5 screens simultaneously.</p>
+    </div>
+    <div class="speed-tiers">
+      <div class="speed-tier-card reveal" data-delay="0">
+        <div class="speed-tier-name">Basic</div>
+        <div style="margin:0.5rem 0;display:flex;justify-content:center"><svg viewBox="0 0 48 48" fill="none" width="48" height="48"><rect x="4" y="6" width="40" height="28" rx="4" stroke="url(#brandGradH)" stroke-width="2" fill="rgba(27,111,255,0.06)"/><polyline points="16,42 24,34 32,42" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="34" x2="24" y2="42" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>500+ Live Channels</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>HD Quality</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>50 hrs Cloud DVR</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>2 screens simultaneously</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>On-demand library</li>
+        </ul>
+        <div class="speed-tier-price">$39 <small>/mo</small></div>
+        <a href="#" class="btn btn-ghost btn-full">Get Basic</a>
+      </div>
+      <div class="speed-tier-card featured reveal" data-delay="100">
+        <div class="plan-badge">Most Popular</div>
+        <div class="speed-tier-name">Premium</div>
+        <div style="margin:0.5rem 0;display:flex;justify-content:center"><svg viewBox="0 0 48 48" fill="none" width="48" height="48"><rect x="4" y="8" width="40" height="32" rx="4" stroke="url(#brandGradH)" stroke-width="2" fill="rgba(27,111,255,0.06)"/><line x1="16" y1="8" x2="12" y2="40" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="32" y1="8" x2="36" y2="40" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="4" y1="18" x2="44" y2="18" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All channels + 2 leagues of your choice</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4K Ultra HD + HDR</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>150 hrs Cloud DVR</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4 screens simultaneously</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>40,000+ on-demand hours</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Netflix · Disney+ · HBO Max included</li>
+        </ul>
+        <div class="speed-tier-price">$79 <small>/mo</small></div>
+        <a href="#" class="btn btn-primary btn-full btn-signal">Get Premium</a>
+      </div>
+      <div class="speed-tier-card reveal" data-delay="200">
+        <div class="speed-tier-name">Prestige</div>
+        <div style="margin:0.5rem 0;display:flex;justify-content:center"><svg viewBox="0 0 48 48" fill="none" width="48" height="48"><path d="M16 6h16v18a8 8 0 01-16 0V6z" stroke="url(#brandGradH)" stroke-width="2" stroke-linejoin="round" fill="rgba(27,111,255,0.06)"/><path d="M10 10H6a4 4 0 004 4" stroke="url(#brandGradH)" stroke-width="2"/><path d="M38 10h4a4 4 0 01-4 4" stroke="url(#brandGradH)" stroke-width="2"/><line x1="24" y1="32" x2="24" y2="40" stroke="url(#brandGradH)" stroke-width="2"/><line x1="16" y1="42" x2="32" y2="42" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>900+ live channels</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4K + Dolby Vision + Atmos</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>300 hrs Cloud DVR</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5 screens simultaneously</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>80,000+ on-demand hours</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Netflix · HBO Max · Disney+ · Apple TV+ included</li>
+        </ul>
+        <div class="speed-tier-price">$119 <small>/mo</small></div>
+        <a href="#" class="btn btn-ghost btn-full">Get Prestige</a>
+      </div>
+      <div class="speed-tier-card reveal" data-delay="300">
+        <div class="plan-badge" style="background:linear-gradient(135deg,#D42AFF,#7B3FFF)">Complete</div>
+        <div class="speed-tier-name">Prestige Plus</div>
+        <div style="margin:0.5rem 0;display:flex;justify-content:center"><svg viewBox="0 0 48 48" fill="none" width="48" height="48"><path d="M16 6h16v18a8 8 0 01-16 0V6z" stroke="url(#brandGradH)" stroke-width="2" stroke-linejoin="round" fill="rgba(27,111,255,0.06)"/><path d="M10 10H6a4 4 0 004 4" stroke="url(#brandGradH)" stroke-width="2"/><path d="M38 10h4a4 4 0 01-4 4" stroke="url(#brandGradH)" stroke-width="2"/><line x1="24" y1="32" x2="24" y2="40" stroke="url(#brandGradH)" stroke-width="2"/><line x1="16" y1="42" x2="32" y2="42" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <ul class="plan-features" style="text-align:left">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Prestige</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>4K + Dolby Vision + Atmos</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>500 hrs Cloud DVR</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5 screens simultaneously</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All 12 streaming apps included</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Netflix · HBO Max · Disney+ · Peacock · Prime · Paramount+ · Apple TV+ · Hulu · ESPN+ · Crunchyroll · BritBox · Shudder</li>
+        </ul>
+        <div class="speed-tier-price">$149 <small>/mo</small></div>
+        <a href="#" class="btn btn-ghost btn-full">Get Prestige Plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STREAMING PLATFORMS -->
+<section class="inner-section inner-section-dark" id="channels">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">PLATFORMS</span>
+      <h2 class="section-title-lg">All Your Favourites.<br>Already Inside.</h2>
+      <p class="section-body-lg">Orbiqa TV is the only platform where your streaming subscriptions live together. No app-switching, no extra remotes, one search for everything.</p>
+    </div>
+    <div class="tv-platforms reveal" style="margin-top:2rem">
+      <div class="platform-logos" style="grid-template-columns:repeat(6,1fr)">
+        <div class="platform-logo">Netflix</div>
+        <div class="platform-logo">Disney+</div>
+        <div class="platform-logo">Prime</div>
+        <div class="platform-logo">Apple TV+</div>
+        <div class="platform-logo">HBO Max</div>
+        <div class="platform-logo">Peacock</div>
+        <div class="platform-logo">Paramount+</div>
+        <div class="platform-logo">Hulu</div>
+        <div class="platform-logo">ESPN+</div>
+        <div class="platform-logo">Crunchyroll</div>
+        <div class="platform-logo">BritBox</div>
+        <div class="platform-logo">Shudder</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE HIGHLIGHTS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FEATURES</span>
+      <h2 class="section-title-lg">Picture-Perfect.<br>Every Time.</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box reveal" data-delay="0"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="3"/></svg></div><div class="feature-box-title">4K Ultra HD</div><div class="feature-box-desc">Every channel available in 4K streams at 60fps. Crystal-clear resolution on screens up to 110 inches.</div></div>
+      <div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div><div class="feature-box-title">Dolby Vision + Atmos</div><div class="feature-box-desc">HDR that adapts scene-by-scene. Spatial audio that puts you in the room. Cinema quality at home.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/></svg></div><div class="feature-box-title">Multi-Screen (5 devices)</div><div class="feature-box-desc">Everyone watches what they want. 5 simultaneous streams across TV, phone, tablet, and laptop.</div></div>
+      <div class="feature-box reveal" data-delay="0"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg></div><div class="feature-box-title">Cloud DVR (500 hrs)</div><div class="feature-box-desc">Record anything, watch anywhere. 500 hours of cloud storage. No hard drive, no limits on simultaneous recordings.</div></div>
+      <div class="feature-box reveal" data-delay="60"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3"/><path d="M6 6V4a2 2 0 012-2h8a2 2 0 012 2v2"/></svg></div><div class="feature-box-title">On-Demand Library</div><div class="feature-box-desc">80,000+ hours of movies, series, and documentaries available to start instantly, any time.</div></div>
+      <div class="feature-box reveal" data-delay="120"><div class="feature-box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 010 20M12 2a14.5 14.5 0 000 20M2 12h20"/></svg></div><div class="feature-box-title">Sports Live</div><div class="feature-box-desc">Premier League, NFL, NBA, F1, MMA, Wimbledon, Olympics, and more — live and in full 4K HDR.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div class="reveal">
+        <span class="section-eyebrow">SPORTS</span>
+        <h2 class="section-title-lg">Every Game. Every Fight.<br><span class="gradient-text">Live.</span></h2>
+        <p class="section-body-lg">The world's biggest sporting moments, delivered live in 4K HDR with Dolby Atmos stadium sound. Never miss a match, race, fight, or rally.</p>
+        <div style="margin-top:1.25rem;display:flex;flex-direction:column;gap:0.75rem">
+          <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;margin-bottom:0.5rem;padding:0.5rem 0.75rem;background:rgba(27,111,255,0.06);border:1px solid var(--border-active);border-radius:6px">Full sports coverage available with <strong>Orbiqa Sport</strong> — add to your TV plan from $29/mo</div>
+          <div style="font-size:11px;font-family:var(--font-mono);letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase">Football</div>
+          <div class="platform-icons-grid" style="grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:0.4rem">
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Champions League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Europa League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Conference League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Premier League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Bundesliga</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">La Liga</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Serie A</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Ligue 1</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">MLS</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Saudi Pro League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">J-League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">A-League</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Efbet Liga</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Sesame Cup BG</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Eredivisie</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Liga Portugal</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Scottish Prem</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Copa del Rey</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">FA Cup</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">DFB-Pokal</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Carabao Cup</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Ligue 1</div>
+          </div>
+          <div style="font-size:11px;font-family:var(--font-mono);letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;margin-top:0.25rem">American Sports</div>
+          <div class="platform-icons-grid" style="grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:0.4rem">
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">NFL</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">NBA</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">NHL</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">MLB</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">NCAA</div>
+          </div>
+          <div style="font-size:11px;font-family:var(--font-mono);letter-spacing:0.08em;color:var(--text-muted);text-transform:uppercase;margin-top:0.25rem">More Sports</div>
+          <div class="platform-icons-grid" style="grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:0.4rem">
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Formula 1</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem;border-color:rgba(212,42,255,0.3);color:#D42AFF;font-weight:700">UFC / MMA</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">ATP Tour</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">All Grand Slams</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">PGA Tour</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Rugby</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Boxing</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Cricket</div>
+            <div class="platform-icon-box" style="font-size:11px;padding:0.4rem 0.6rem">Olympics</div>
+          </div>
+        </div>
+        <a href="sport.html" style="display:inline-block;margin-top:1.5rem;color:var(--signal-blue);font-size:14px;font-weight:600;text-decoration:none">Explore Orbiqa Sport &#8594;</a>
+      </div>
+      <div class="reveal" data-delay="200" style="background:linear-gradient(135deg,rgba(27,111,255,0.1),rgba(123,63,255,0.1));border:1px solid var(--border-active);border-radius:var(--radius-lg);padding:3rem;text-align:center">
+        <svg viewBox="0 0 64 64" fill="none" width="72" height="72" style="margin-bottom:1rem"><polygon points="32,4 40,20 58,20 44,32 50,50 32,40 14,50 20,32 6,20 24,20" stroke="url(#brandGradH)" stroke-width="2" stroke-linejoin="round" fill="rgba(27,111,255,0.08)"/></svg>
+        <div style="font-size:22px;font-weight:800;color:var(--text-primary);margin-bottom:0.5rem">Orbiqa Sports Pass</div>
+        <div style="font-size:15px;color:var(--text-secondary);line-height:1.6;margin-bottom:1.5rem">Included free with Premium and Prestige plans. Over 15,000 live sporting events per year.</div>
+        <div style="font-size:36px;font-weight:800;background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">15,000+</div>
+        <div style="font-size:13px;color:var(--text-muted)">Live events per year</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS / PLATFORMS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">THE APP</span>
+      <h2 class="section-title-lg">Watch on Any Screen,<br>Anywhere.</h2>
+      <p class="section-body-lg">The Orbiqa TV app is available across every device you own. One login, all your content, everywhere.</p>
+    </div>
+    <div class="platform-icons-grid reveal" style="gap:1rem">
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Smart TV</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Amazon Fire Stick</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Apple TV</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Android</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">iOS</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Web Browser</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">PlayStation</div>
+      <div class="platform-icon-box" style="padding:1rem 1.5rem;font-size:15px">Xbox</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">TV Questions Answered</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">Do I need a special set-top box?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No set-top box required. Download the Orbiqa TV app on your Smart TV, streaming stick, or any device. If you prefer a dedicated box, we offer the Orbiqa TV Box (optional, $49 one-time) which adds 4K HDR and Dolby Atmos to any HDMI TV.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I watch Orbiqa TV abroad?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. With an Orbit or Apex mobile plan, your Orbiqa TV subscription travels with you in 150+ countries. Connect over Orbiqa 5G or local WiFi and stream everything you normally would at home.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How many screens can I use at once?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Basic allows 3 simultaneous streams, Premium allows 4, and Prestige and Prestige Plus both allow 5. You can also add extra streams for $5/month per additional screen on any plan.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is Netflix included?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Netflix, HBO Max, Disney+, and Apple TV+ are included with Prestige plans. Prestige Plus includes all 12 streaming platforms. On Basic, you can add streaming apps individually as add-ons. Premium includes Netflix, Disney+, and HBO Max.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I record live TV?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Every plan includes cloud DVR. Basic gets 50 hours, Premium gets 150 hours, Prestige gets 300 hours, and Prestige Plus gets 500 hours of cloud storage. Record multiple shows simultaneously, watch on any device, and recordings are stored for 365 days.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLE CTA -->
+<section class="inner-section" style="text-align:center">
+  <div class="container" style="max-width:680px">
+    <span class="section-eyebrow reveal">COMPLETE YOUR SETUP</span>
+    <h2 class="section-title-lg reveal">Add Mobile + Fiber.<br><span class="gradient-text">One Perfect Bundle.</span></h2>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">Save up to $107/month when you bundle Orbiqa TV with Fiber and Mobile. One bill. One network. Complete coverage.</p>
+    <div class="reveal" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="mobile.html" class="btn btn-primary btn-signal">Add Mobile</a>
+      <a href="internet.html" class="btn btn-primary btn-signal">Add Fiber</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">◻</a><a href="#" class="social-link">▶</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

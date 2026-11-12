@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa — The Network the World Runs On</title>
+  <meta name="description" content="Orbiqa is the world's largest telecom network. 5G mobile, ultrafast fiber, global TV streaming, and roaming in 190+ countries — all from one plan.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ─── SHARED SVG DEFS (gradients referenced by all inline SVGs) ─── -->
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#FF8C2A"/>
+      <stop offset="60%"  stop-color="#D42AFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo" aria-label="Orbiqa Home">
+      <img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img">
+    </a>
+
+    <div class="nav-links" role="menubar">
+      <div class="nav-item has-dropdown" role="none">
+        <a href="#" class="nav-link" role="menuitem" aria-haspopup="true">Personal</a>
+        <div class="nav-dropdown" role="menu">
+          <a href="mobile.html"   role="menuitem">Mobile</a>
+          <a href="internet.html" role="menuitem">Internet</a>
+          <a href="tv.html"       role="menuitem">TV &amp; Streaming</a>
+          <a href="sport.html"    role="menuitem">Orbiqa Sport</a>
+          <a href="devices.html"  role="menuitem">Devices</a>
+          <a href="bundles.html"  role="menuitem">Bundles</a>
+          <a href="roaming.html"  role="menuitem">Global Roaming</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown" role="none">
+        <a href="#" class="nav-link" role="menuitem" aria-haspopup="true">Business</a>
+        <div class="nav-dropdown" role="menu">
+          <a href="business.html#smb"        role="menuitem">SMB</a>
+          <a href="business.html#enterprise" role="menuitem">Enterprise</a>
+          <a href="business.html#wholesale"  role="menuitem">Wholesale</a>
+          <a href="business.html#iot"        role="menuitem">IoT</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown" role="none">
+        <a href="#" class="nav-link" role="menuitem" aria-haspopup="true">Global</a>
+        <div class="nav-dropdown" role="menu">
+          <a href="coverage.html" role="menuitem">Coverage Map</a>
+          <a href="roaming.html"  role="menuitem">Roaming</a>
+          <a href="about.html"    role="menuitem">Orbiqa Worldwide</a>
+        </div>
+      </div>
+
+      <div class="nav-item" role="none">
+        <a href="support.html" class="nav-link" role="menuitem">Support</a>
+      </div>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm" aria-label="My Orbiqa account">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+    <div class="nav-overlay-arc" aria-hidden="true"></div>
+    <nav class="nav-overlay-links" aria-label="Mobile navigation">
+      <a href="mobile.html">Mobile</a>
+      <a href="internet.html">Internet</a>
+      <a href="tv.html">TV &amp; Streaming</a>
+      <a href="sport.html">Orbiqa Sport</a>
+      <a href="devices.html">Devices</a>
+      <a href="bundles.html">Bundles</a>
+      <a href="roaming.html">Global Roaming</a>
+      <a href="business.html">Business</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="about.html">About Orbiqa</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="nav-overlay-actions">
+      <a href="#" class="btn btn-ghost">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+════════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero" aria-label="Hero">
+  <canvas id="globeCanvas" class="globe-canvas" aria-hidden="true"></canvas>
+  <div class="hero-bg-glow" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow" aria-hidden="true">ORBIQA GLOBAL NETWORK</span>
+
+    <h1 class="hero-headline">
+      <span class="line" data-delay="0">The Network</span>
+      <span class="line" data-delay="120">the World</span>
+      <span class="line gradient-text" data-delay="240">Runs On.</span>
+    </h1>
+
+    <p class="hero-subheadline">
+      Connecting 190 countries. Next-generation 5G.<br>
+      Unlimited fiber. All from a single network built to last.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#plans" class="btn btn-primary btn-signal">Explore Plans</a>
+      <a href="#network-story" class="btn btn-ghost">See Our Network</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 2 — STATS BAR
+════════════════════════════════════════════════════════════ -->
+<section class="stats-bar" id="statsBar" aria-label="Network statistics">
+  <div class="container">
+    <div class="stats-grid">
+
+      <div class="stat-item">
+        <div class="stat-number" data-target="190" data-suffix="+">0</div>
+        <div class="stat-label">Countries Connected</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item">
+        <div class="stat-number" data-target="10" data-suffix="B+">0</div>
+        <div class="stat-label">Connected Devices</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item">
+        <div class="stat-number" data-target="99.9" data-suffix="%" data-decimal="1">0</div>
+        <div class="stat-label">Network Uptime</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item">
+        <div class="stat-number" data-target="10" data-suffix=" Gbps">0</div>
+        <div class="stat-label">Max Fiber Speed</div>
+      </div>
+
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <div class="stat-item">
+        <div class="stat-number" data-target="1" data-prefix="#" data-static="true">#1</div>
+        <div class="stat-label">In Global Coverage</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 3 — FOUR PILLARS
+════════════════════════════════════════════════════════════ -->
+<section class="pillars" id="pillars" aria-label="Our services">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <h2 class="section-title">Everything You're Connected To.<br>All From One Network.</h2>
+    </div>
+
+    <div class="pillars-grid">
+
+      <!-- Mobile -->
+      <a href="mobile.html" class="pillar-card reveal" data-delay="0" aria-label="Orbiqa Mobile">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="4" width="20" height="40" rx="4" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="24" cy="38" r="2" fill="url(#brandGrad)"/>
+            <line x1="14" y1="12" x2="34" y2="12" stroke="url(#brandGrad)" stroke-width="1.5" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3 class="pillar-name">Mobile</h3>
+        <p class="pillar-desc">5G across 190 countries, starting at home. Plans that travel as far as you do.</p>
+        <span class="pillar-link">Learn more →</span>
+      </a>
+
+      <!-- Fiber -->
+      <a href="internet.html" class="pillar-card reveal" data-delay="80" aria-label="Orbiqa Fiber Internet">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="18" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <ellipse cx="24" cy="24" rx="10" ry="18" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <line x1="6" y1="24" x2="42" y2="24" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <line x1="10" y1="16" x2="38" y2="16" stroke="url(#brandGrad)" stroke-width="1" opacity="0.4"/>
+            <line x1="10" y1="32" x2="38" y2="32" stroke="url(#brandGrad)" stroke-width="1" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3 class="pillar-name">Fiber Internet</h3>
+        <p class="pillar-desc">Symmetrical speeds up to 10 Gbps. Zero throttle. Self-healing network to your door.</p>
+        <span class="pillar-link">Learn more →</span>
+      </a>
+
+      <!-- TV -->
+      <a href="tv.html" class="pillar-card reveal" data-delay="160" aria-label="Orbiqa TV and Streaming">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="10" width="40" height="28" rx="4" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <line x1="18" y1="38" x2="30" y2="38" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="24" y1="38" x2="24" y2="44" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            <polygon points="20,19 20,29 31,24" fill="url(#brandGrad)" opacity="0.8"/>
+          </svg>
+        </div>
+        <h3 class="pillar-name">TV &amp; Streaming</h3>
+        <p class="pillar-desc">Every channel. Every app. One screen. 500+ live channels and 80,000+ hours on demand.</p>
+        <span class="pillar-link">Learn more →</span>
+      </a>
+
+      <!-- Business -->
+      <a href="business.html" class="pillar-card reveal" data-delay="240" aria-label="Orbiqa Business">
+        <div class="pillar-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="16" width="32" height="24" rx="3" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <rect x="16" y="8" width="16" height="10" rx="2" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <line x1="8" y1="26" x2="40" y2="26" stroke="url(#brandGrad)" stroke-width="1.5"/>
+            <line x1="24" y1="26" x2="24" y2="40" stroke="url(#brandGrad)" stroke-width="1" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3 class="pillar-name">Business Connectivity</h3>
+        <p class="pillar-desc">Enterprise-grade reliability, served globally. From SMB to Fortune 500 infrastructure.</p>
+        <span class="pillar-link">Learn more →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 4 — NETWORK STORY (SCROLL NARRATIVE)
+════════════════════════════════════════════════════════════ -->
+<section class="network-story" id="network-story" aria-label="Global network story">
+
+  <canvas id="networkGlobe" class="network-globe-canvas" aria-hidden="true"></canvas>
+
+  <div class="network-chapters">
+
+    <div class="network-chapter" id="chapter1">
+      <div class="chapter-content">
+        <span class="eyebrow">THE NETWORK</span>
+        <h2>A network that<br>never sleeps.</h2>
+        <p>Every second of every day, Orbiqa carries the world's conversations, transactions, and moments across 190 countries.</p>
+      </div>
+    </div>
+
+    <div class="network-chapter" id="chapter2">
+      <div class="chapter-content">
+        <span class="eyebrow">INFRASTRUCTURE</span>
+        <h2>4.2 million kilometres<br>of network infrastructure.</h2>
+        <p>Undersea cables, next-generation towers, and fiber-threaded cities — built to handle whatever comes next.</p>
+      </div>
+    </div>
+
+    <div class="network-chapter" id="chapter3">
+      <div class="chapter-content">
+        <span class="eyebrow">ONE NETWORK</span>
+        <h2>One network.<br>One Orbiqa.</h2>
+        <p>All of this, available to you with a single plan from the world's most connected network.</p>
+        <a href="coverage.html" class="btn btn-primary btn-signal" style="margin-top:2rem">Explore Coverage</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 5 — MOBILE PLANS
+════════════════════════════════════════════════════════════ -->
+<section class="plans-section" id="plans" aria-label="Mobile plans">
+  <div class="container">
+
+    <div class="plans-header reveal">
+      <span class="eyebrow">ORBIQA MOBILE</span>
+      <h2 class="section-title">Every Plan.<br>Unlimited Everywhere.</h2>
+      <p class="section-subtitle">Your signal doesn't stop at borders. Neither does your plan.</p>
+
+      <div class="plan-toggles" role="group" aria-label="Plan options">
+        <div class="toggle-group" id="planTypeToggle" role="radiogroup" aria-label="Plan type">
+          <button class="toggle-btn active" data-type="personal" role="radio" aria-checked="true">Personal</button>
+          <button class="toggle-btn" data-type="family" role="radio" aria-checked="false">Family</button>
+        </div>
+        <div class="toggle-group" id="billingToggle" role="radiogroup" aria-label="Billing period">
+          <button class="toggle-btn active" data-billing="monthly" role="radio" aria-checked="true">Monthly</button>
+          <button class="toggle-btn" data-billing="annual" role="radio" aria-checked="false">
+            Annual <span class="save-badge">Save 20%</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="plans-grid" id="plansGrid">
+
+      <!-- Signal Plan -->
+      <div class="plan-card reveal" data-delay="0">
+        <div class="plan-header">
+          <span class="plan-name">Signal</span>
+          <p class="plan-tagline">Essential connectivity</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount"
+            data-personal-monthly="29"
+            data-personal-annual="22"
+            data-family-monthly="55"
+            data-family-annual="44">29</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features" aria-label="Signal plan features">
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            50 GB Data
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            5G Access
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Roaming in 60 Countries
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            HD Voice &amp; Video Calls
+          </li>
+        </ul>
+        <a href="mobile.html" class="btn btn-ghost btn-full">Choose Signal</a>
+      </div>
+
+      <!-- Orbit Plan (Featured) -->
+      <div class="plan-card featured reveal" data-delay="100">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-header">
+          <span class="plan-name">Orbit</span>
+          <p class="plan-tagline">Unlimited, everywhere</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount"
+            data-personal-monthly="59"
+            data-personal-annual="47"
+            data-family-monthly="99"
+            data-family-annual="79">59</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features" aria-label="Orbit plan features">
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Unlimited Data
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            5G Ultra Access
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Roaming in 190 Countries
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            HD Voice &amp; Video Calls
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            30 GB Mobile Hotspot
+          </li>
+        </ul>
+        <a href="mobile.html" class="btn btn-primary btn-full btn-signal">Choose Orbit</a>
+      </div>
+
+      <!-- Apex Plan -->
+      <div class="plan-card reveal" data-delay="200">
+        <div class="plan-header">
+          <span class="plan-name">Apex</span>
+          <p class="plan-tagline">The complete experience</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount"
+            data-personal-monthly="99"
+            data-personal-annual="79"
+            data-family-monthly="169"
+            data-family-annual="135">99</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features" aria-label="Apex plan features">
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Unlimited Data + Priority
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            5G Ultra + mmWave
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Global Unlimited Roaming
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            80 GB Mobile Hotspot
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Annual Device Protection
+          </li>
+          <li>
+            <svg class="check-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Dedicated Priority Support
+          </li>
+        </ul>
+        <a href="mobile.html" class="btn btn-ghost btn-full">Choose Apex</a>
+      </div>
+
+    </div><!-- /plans-grid -->
+
+    <div class="plans-trust reveal" aria-label="Plan guarantees">
+      <span>No contracts.</span>
+      <span>Cancel anytime.</span>
+      <span>Port your number in 24 hours.</span>
+    </div>
+
+    <div class="plans-cta reveal">
+      <a href="mobile.html" class="text-link">See all plans and add-ons →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 6 — FIBER INTERNET
+════════════════════════════════════════════════════════════ -->
+<section class="fiber-section fiber-section-img" id="fiber" aria-label="Fiber Internet">
+  <div class="fiber-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="fiber-layout">
+
+      <!-- Content -->
+      <div class="fiber-content reveal">
+        <span class="eyebrow">ORBIQA FIBER</span>
+        <h2 class="section-title">Not Fast.<br>Impossibly Fast.</h2>
+        <p class="section-body">10 Gbps symmetrical fiber. Built for how you actually live — not how you used to.</p>
+
+        <!-- Speed Visualizer -->
+        <div class="speed-viz" aria-label="Speed comparison">
+          <div class="speed-item">
+            <div class="speed-arc-container">
+              <svg class="speed-arc" viewBox="0 0 120 60" aria-hidden="true">
+                <path d="M 10 55 A 50 50 0 0 1 110 55" stroke="#1A1F45" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <path class="arc-fill orbiqa-arc" d="M 10 55 A 50 50 0 0 1 110 55" stroke="url(#arcGradient)" stroke-width="8" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span class="speed-value">10 Gbps</span>
+              <span class="speed-label">Orbiqa Fiber</span>
+            </div>
+          </div>
+          <div class="speed-item">
+            <div class="speed-arc-container">
+              <svg class="speed-arc" viewBox="0 0 120 60" aria-hidden="true">
+                <path d="M 10 55 A 50 50 0 0 1 110 55" stroke="#1A1F45" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <path class="arc-fill competitor-arc" d="M 10 55 A 50 50 0 0 1 110 55" stroke="#2A3060" stroke-width="8" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span class="speed-value muted">~500 Mbps</span>
+              <span class="speed-label muted">Industry Average</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <ul class="fiber-features" aria-label="Fiber features">
+          <li>
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 17l10 5 10-5" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12l10 5 10-5" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>Symmetric upload and download</strong>
+              <span>As fast going up as it is coming down</span>
+            </div>
+          </li>
+          <li>
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M12 3 C8 8 8 16 12 21" stroke="url(#brandGrad)" stroke-width="1.5" fill="none"/>
+              <path d="M12 3 C16 8 16 16 12 21" stroke="url(#brandGrad)" stroke-width="1.5" fill="none"/>
+            </svg>
+            <div>
+              <strong>100% fiber optic to your door</strong>
+              <span>No copper, no coax, no compromise</span>
+            </div>
+          </li>
+          <li>
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M7 11V7a5 5 0 0110 0v4" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="12" cy="16" r="1.5" fill="url(#brandGrad)"/>
+            </svg>
+            <div>
+              <strong>Smart WiFi 7 router included</strong>
+              <span>Whole-home coverage, self-optimizing</span>
+            </div>
+          </li>
+          <li>
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <polyline points="22,12 18,12 15,20 9,4 6,12 2,12" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>Self-healing network technology</strong>
+              <span>Issues detected and resolved automatically</span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="internet.html" class="btn btn-primary btn-signal" style="margin-top:2.5rem">Check Your Address</a>
+      </div>
+
+      <!-- Router Visual -->
+      <div class="fiber-visual reveal" data-delay="200" aria-hidden="true">
+        <div class="fiber-device">
+          <div class="router-mockup">
+            <div class="router-body">
+              <div class="router-screen">
+                <span class="router-label">Fiber Active</span>
+                <div class="router-speed">10<small>Gbps</small></div>
+                <div class="router-dots" style="margin-top:0.75rem">
+                  <span class="dot active"></span>
+                  <span class="dot active"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="router-glow"></div>
+            </div>
+            <div class="router-base"></div>
+            <div class="wifi-rings">
+              <div class="wifi-ring r1"></div>
+              <div class="wifi-ring r2"></div>
+              <div class="wifi-ring r3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 7 — TV & STREAMING
+════════════════════════════════════════════════════════════ -->
+<section class="tv-section tv-section-img" id="tv" aria-label="TV and Streaming">
+  <div class="tv-bg" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="tv-header reveal">
+      <span class="eyebrow">ORBIQA TV</span>
+      <h2 class="section-title">Every Story.<br>One Screen.</h2>
+      <div class="tv-stats" aria-label="TV plan statistics">
+        <span><strong>500+</strong> Live Channels</span>
+        <span class="tv-stat-dot" aria-hidden="true">·</span>
+        <span><strong>80,000</strong> Hours On-Demand</span>
+        <span class="tv-stat-dot" aria-hidden="true">·</span>
+        <span><strong>150+</strong> Countries Streaming</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Draggable channel card strip -->
+  <div class="tv-cards-track reveal" aria-label="Content categories">
+    <div class="tv-cards" role="list">
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb sports" aria-hidden="true"></div>
+        <span class="tv-card-label">Live Sports</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb cinema" aria-hidden="true"></div>
+        <span class="tv-card-label">Cinema</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb news" aria-hidden="true"></div>
+        <span class="tv-card-label">Global News</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb docs" aria-hidden="true"></div>
+        <span class="tv-card-label">Documentary</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb kids" aria-hidden="true"></div>
+        <span class="tv-card-label">Kids</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb music" aria-hidden="true"></div>
+        <span class="tv-card-label">Music &amp; Culture</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb sports" aria-hidden="true"></div>
+        <span class="tv-card-label">Live Sports</span>
+      </div>
+      <div class="tv-card" role="listitem">
+        <div class="tv-card-thumb cinema" aria-hidden="true"></div>
+        <span class="tv-card-label">Cinema</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tv-platforms reveal">
+      <p class="tv-platforms-label">All your favourite platforms. Already inside.</p>
+      <div class="platform-logos" role="list" aria-label="Streaming platforms">
+        <div class="platform-logo" role="listitem">Netflix</div>
+        <div class="platform-logo" role="listitem">Disney+</div>
+        <div class="platform-logo" role="listitem">Prime</div>
+        <div class="platform-logo" role="listitem">Apple TV+</div>
+        <div class="platform-logo" role="listitem">HBO Max</div>
+        <div class="platform-logo" role="listitem">Peacock</div>
+      </div>
+    </div>
+    <div class="tv-cta reveal">
+      <a href="tv.html" class="btn btn-primary btn-signal">Explore TV Plans</a>
+      <a href="tv.html" class="text-link">See all channels →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 8 — GLOBAL ROAMING
+════════════════════════════════════════════════════════════ -->
+<section class="roaming-section" id="roaming" aria-label="Global Roaming">
+  <canvas id="worldMapCanvas" class="world-map-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="roaming-content">
+      <span class="eyebrow reveal">GLOBAL ROAMING</span>
+      <h2 class="section-title reveal">Take Orbiqa With You.<br>Every Country.<br>Every Continent.</h2>
+      <p class="section-body reveal">190 countries. Instant connectivity the moment you land.</p>
+
+      <div class="roaming-plans" role="list" aria-label="Roaming plan options">
+
+        <div class="roaming-plan-card reveal" data-delay="0" role="listitem">
+          <span class="roaming-plan-name">Day Pass</span>
+          <span class="roaming-plan-price">From $5 / day</span>
+          <span class="roaming-plan-desc">Full speed for 24 hours</span>
+          <a href="roaming.html" class="btn btn-ghost btn-sm">Add to Plan</a>
+        </div>
+
+        <div class="roaming-plan-card reveal" data-delay="80" role="listitem">
+          <span class="roaming-plan-name">Weekly</span>
+          <span class="roaming-plan-price">From $25 / week</span>
+          <span class="roaming-plan-desc">Unlimited for 7 days</span>
+          <a href="roaming.html" class="btn btn-ghost btn-sm">Add to Plan</a>
+        </div>
+
+        <div class="roaming-plan-card featured reveal" data-delay="160" role="listitem">
+          <span class="roaming-plan-name">Global Unlimited</span>
+          <span class="roaming-plan-price">From $49 / mo</span>
+          <span class="roaming-plan-desc">Always connected worldwide</span>
+          <a href="roaming.html" class="btn btn-primary btn-sm btn-signal">Add to Plan</a>
+        </div>
+
+      </div>
+
+      <a href="coverage.html" class="text-link reveal" style="margin-top:2rem;display:inline-block">
+        See full roaming coverage →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 9 — BUSINESS
+════════════════════════════════════════════════════════════ -->
+<section class="business-section business-section-img" id="business" aria-label="Orbiqa Business">
+  <div class="business-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="business-layout">
+
+      <!-- Content -->
+      <div class="business-content reveal">
+        <span class="eyebrow">ORBIQA BUSINESS</span>
+        <h2 class="section-title">Built for Those Who<br>Can't Afford to Stop.</h2>
+        <p class="section-body">From SMB connectivity to global enterprise WAN. Orbiqa Business delivers infrastructure-grade reliability, dedicated support, and the only network that scales with your ambition.</p>
+
+        <div class="business-credentials" aria-label="Business credentials">
+          <div class="credential">
+            <span class="credential-value">99.99%</span>
+            <span class="credential-label">Enterprise SLA</span>
+          </div>
+          <div class="credential">
+            <span class="credential-value">24/7</span>
+            <span class="credential-label">Dedicated Support</span>
+          </div>
+          <div class="credential">
+            <span class="credential-value">ISO 27001</span>
+            <span class="credential-label">Security Certified</span>
+          </div>
+        </div>
+
+        <div class="business-actions">
+          <a href="business.html" class="btn btn-primary btn-signal">Explore Business Solutions</a>
+          <a href="business.html#contact" class="btn btn-ghost">Talk to an Expert</a>
+        </div>
+      </div>
+
+      <!-- Network Nodes Visual -->
+      <div class="business-visual reveal" data-delay="200" aria-hidden="true">
+        <div class="network-nodes">
+          <div class="node-hub"></div>
+          <div class="node n1"></div>
+          <div class="node n2"></div>
+          <div class="node n3"></div>
+          <div class="node n4"></div>
+          <div class="node n5"></div>
+          <div class="node n6"></div>
+          <svg class="node-connections" viewBox="0 0 300 300">
+            <line x1="150" y1="150" x2="78"  y2="78"  stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="150" x2="204" y2="78"  stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="150" x2="60"  y2="171" stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="150" x2="240" y2="171" stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="150" x2="99"  y2="249" stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+            <line x1="150" y1="150" x2="198" y2="249" stroke="url(#brandGrad)" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 10 — TESTIMONIALS
+════════════════════════════════════════════════════════════ -->
+<section class="testimonials-section" id="testimonials" aria-label="Customer testimonials">
+  <div class="container">
+
+    <div class="testimonials-header reveal">
+      <div class="rating-bar">
+        <div class="stars" aria-label="Five stars"><svg viewBox="0 0 120 22" fill="none" width="100" height="18" aria-label="Five stars"><polygon points="11,1 13.8,8.5 22,8.5 15.6,13.5 18,21 11,16.3 4,21 6.4,13.5 0,8.5 8.2,8.5" fill="rgba(255,180,0,0.9)" stroke="rgba(255,180,0,0.5)" stroke-width="0.5"/><polygon points="35,1 37.8,8.5 46,8.5 39.6,13.5 42,21 35,16.3 28,21 30.4,13.5 24,8.5 32.2,8.5" fill="rgba(255,180,0,0.9)" stroke="rgba(255,180,0,0.5)" stroke-width="0.5"/><polygon points="59,1 61.8,8.5 70,8.5 63.6,13.5 66,21 59,16.3 52,21 54.4,13.5 48,8.5 56.2,8.5" fill="rgba(255,180,0,0.9)" stroke="rgba(255,180,0,0.5)" stroke-width="0.5"/><polygon points="83,1 85.8,8.5 94,8.5 87.6,13.5 90,21 83,16.3 76,21 78.4,13.5 72,8.5 80.2,8.5" fill="rgba(255,180,0,0.9)" stroke="rgba(255,180,0,0.5)" stroke-width="0.5"/><polygon points="107,1 109.8,8.5 118,8.5 111.6,13.5 114,21 107,16.3 100,21 102.4,13.5 96,8.5 104.2,8.5" fill="rgba(255,180,0,0.9)" stroke="rgba(255,180,0,0.5)" stroke-width="0.5"/></svg></div>
+        <span class="rating-text">4.8 / 5 · Based on 2.4 million reviews</span>
+      </div>
+    </div>
+
+    <div class="testimonials-track reveal" data-delay="100">
+      <div class="testimonials-carousel" id="testimonialsCarousel" aria-live="polite">
+
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-portrait" aria-hidden="true">MK</div>
+          <div class="testimonial-body">
+            <blockquote>"I have not thought about my internet since the day Orbiqa installed it."</blockquote>
+            <cite>Mariana K. <span>London, UK · Orbiqa Fiber</span></cite>
+          </div>
+        </div>
+
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-portrait" aria-hidden="true">RS</div>
+          <div class="testimonial-body">
+            <blockquote>"Flying 40 weeks a year. Orbiqa is the only number I trust."</blockquote>
+            <cite>Raj S. <span>Singapore · Orbiqa Apex Roaming</span></cite>
+          </div>
+        </div>
+
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-portrait" aria-hidden="true">TL</div>
+          <div class="testimonial-body">
+            <blockquote>"Our entire logistics operation runs on Orbiqa. It's not infrastructure — it's a competitive advantage."</blockquote>
+            <cite>Thomas L. <span>Frankfurt, DE · Orbiqa Enterprise</span></cite>
+          </div>
+        </div>
+
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-portrait" aria-hidden="true">AC</div>
+          <div class="testimonial-body">
+            <blockquote>"Switched from three different providers to Orbiqa. One bill. One quality. Done."</blockquote>
+            <cite>Amara C. <span>Lagos, NG · Orbiqa Orbit + TV</span></cite>
+          </div>
+        </div>
+
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-portrait" aria-hidden="true">JW</div>
+          <div class="testimonial-body">
+            <blockquote>"The 5G speed in our studio is faster than our old wired office connection. That says everything."</blockquote>
+            <cite>Jake W. <span>Los Angeles, US · Orbiqa 5G Business</span></cite>
+          </div>
+        </div>
+
+      </div><!-- /carousel -->
+
+      <div class="carousel-controls" role="group" aria-label="Carousel controls">
+        <button class="carousel-btn prev" id="testimonialPrev" aria-label="Previous testimonial">←</button>
+        <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Testimonial navigation"></div>
+        <button class="carousel-btn next" id="testimonialNext" aria-label="Next testimonial">→</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 11 — APP SHOWCASE
+════════════════════════════════════════════════════════════ -->
+<section class="app-section" id="app" aria-label="Orbiqa App">
+  <div class="container">
+    <div class="app-layout">
+
+      <!-- Content -->
+      <div class="app-content reveal">
+        <span class="eyebrow">MY ORBIQA APP</span>
+        <h2 class="section-title">Your Network.<br>In Your Pocket.</h2>
+
+        <ul class="app-features" aria-label="App features">
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="8" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M10 6v4l3 2" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Real-time data usage monitoring
+          </li>
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="14" height="14" rx="2" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M7 10h6M10 7v6" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Plan management and instant upgrades
+          </li>
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M18 13.5a2 2 0 01-2 2H4a2 2 0 01-2-2V6.5a2 2 0 012-2h12a2 2 0 012 2v7z" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M6 10h8" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Live chat and priority support
+          </li>
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <polyline points="2,10 7,4 12,10 17,4" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Network speed test — anytime, anywhere
+          </li>
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="8" stroke="url(#brandGrad)" stroke-width="1.5"/>
+              <path d="M6 10l2.5 2.5L14 7" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Roaming activation in one tap
+          </li>
+          <li>
+            <svg class="app-feature-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M9 2H4a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+              <polyline points="13,2 18,2 18,7" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="9" y1="11" x2="18" y2="2" stroke="url(#brandGrad)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Family plan and multi-line management
+          </li>
+        </ul>
+
+        <div class="app-download" aria-label="Download the app">
+          <a href="#" class="app-store-btn" aria-label="Download on App Store">
+            <svg viewBox="0 0 24 24" fill="white" width="20" height="20" aria-hidden="true">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            App Store
+          </a>
+          <a href="#" class="app-store-btn" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" fill="white" width="20" height="20" aria-hidden="true">
+              <path d="M3.18 23.76a2 2 0 001.92-.18l11.5-6.62-2.5-2.5L3.18 23.76zM20.7 9.34L17.5 7.5l-2.77 2.77 2.77 2.77 3.23-1.84a1.63 1.63 0 000-2.86zM1.43.9A1.6 1.6 0 001 2v20a1.6 1.6 0 00.43 1.1l.1.1L13.1 12 1.53.8l-.1.1zM5.1 1.42L16.6 8.04l-2.5 2.5L5.1 1.42z"/>
+            </svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+
+      <!-- Phone Mockup -->
+      <div class="app-phone-mockup reveal" data-delay="200" aria-hidden="true">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-ui">
+              <div class="app-ui-header">
+                <span class="app-greeting">Good evening,</span>
+                <span class="app-user">Alex</span>
+              </div>
+              <div class="app-ui-data">
+                <div class="data-ring">
+                  <svg viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="#1A1F45" stroke-width="6"/>
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="url(#arcGradient)" stroke-width="6"
+                      stroke-dasharray="138 50" stroke-linecap="round"
+                      transform="rotate(-90 40 40)"/>
+                  </svg>
+                  <div class="data-ring-text">
+                    <span>73%</span>
+                    <small>remaining</small>
+                  </div>
+                </div>
+              </div>
+              <div class="app-ui-stats">
+                <div class="app-stat">
+                  <span class="stat-val">38.2 GB</span>
+                  <span class="stat-lbl">Used</span>
+                </div>
+                <div class="app-stat">
+                  <span class="stat-val">Unlimited</span>
+                  <span class="stat-lbl">Plan</span>
+                </div>
+              </div>
+              <div class="app-ui-speed">
+                <div class="speed-row">
+                  <span>↓ Download</span>
+                  <span class="speed-num">847 Mbps</span>
+                </div>
+                <div class="speed-row">
+                  <span>↑ Upload</span>
+                  <span class="speed-num">412 Mbps</span>
+                </div>
+              </div>
+              <div class="app-ui-status">
+                <span class="status-dot"></span>
+                <span>5G Ultra · Active</span>
+              </div>
+            </div>
+          </div>
+          <div class="phone-home-indicator"></div>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 12 — COVERAGE CHECK
+════════════════════════════════════════════════════════════ -->
+<section class="coverage-section" id="coverage-check" aria-label="Coverage checker">
+  <div class="container">
+    <div class="coverage-content reveal">
+      <span class="eyebrow">COVERAGE</span>
+      <h2 class="section-title">Is Orbiqa in<br>Your Neighbourhood?</h2>
+
+      <form class="coverage-form" id="coverageForm" aria-label="Address coverage checker">
+        <div class="coverage-input-wrap">
+          <svg class="coverage-search-icon" viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="#5A6080" stroke-width="1.5"/>
+            <path d="M17 17l4 4" stroke="#5A6080" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input
+            type="text"
+            id="addressInput"
+            class="coverage-input"
+            placeholder="Enter your address or postcode..."
+            autocomplete="street-address"
+            aria-label="Your address or postcode"
+          >
+          <button type="submit" class="coverage-submit btn btn-primary btn-signal">
+            Check Coverage
+          </button>
+        </div>
+      </form>
+
+      <div class="coverage-result" id="coverageResult" style="display:none" aria-live="polite"></div>
+
+      <a href="coverage.html" class="text-link" style="margin-top:1.5rem;display:inline-block">
+        View full coverage map →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 13 — FINAL CTA
+════════════════════════════════════════════════════════════ -->
+<section class="final-cta" id="final-cta" aria-label="Get started with Orbiqa">
+  <canvas id="finalGlobe" class="final-globe-canvas" aria-hidden="true"></canvas>
+  <div class="final-cta-glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="final-cta-content reveal">
+      <h2 class="final-headline">Ready to Join<br>the World's<br>Greatest Network?</h2>
+      <p class="final-subheadline">Get connected in as little as 24 hours.</p>
+      <div class="final-cta-buttons">
+        <a href="mobile.html"            class="btn btn-primary btn-signal">Start with Mobile</a>
+        <a href="internet.html"          class="btn btn-primary btn-signal">Start with Fiber</a>
+        <a href="business.html#contact"  class="btn btn-ghost">Contact Business Sales</a>
+      </div>
+      <p class="final-trust">
+        No contracts required &nbsp;·&nbsp; 30-day satisfaction guarantee &nbsp;·&nbsp; Free installation
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-spectrum-line" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="index.html" aria-label="Orbiqa Home">
+          <img src="pictures/logo.png" alt="Orbiqa" class="footer-logo">
+        </a>
+        <p class="footer-tagline">The Network the World Runs On.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="Follow Orbiqa on X (Twitter)">𝕏</a>
+          <a href="#" class="social-link" aria-label="Orbiqa on LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Orbiqa on Instagram">◻</a>
+          <a href="#" class="social-link" aria-label="Orbiqa on YouTube">▶</a>
+        </div>
+      </div>
+
+      <!-- Link columns -->
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Personal</h4>
+          <ul>
+            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="internet.html">Internet</a></li>
+            <li><a href="tv.html">TV &amp; Streaming</a></li>
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="roaming.html">Global Roaming</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Business</h4>
+          <ul>
+            <li><a href="business.html#smb">SMB</a></li>
+            <li><a href="business.html#enterprise">Enterprise</a></li>
+            <li><a href="business.html#iot">IoT</a></li>
+            <li><a href="business.html#wholesale">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Orbiqa</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+            <li><a href="about.html#press">Press</a></li>
+            <li><a href="about.html#sustainability">Sustainability</a></li>
+            <li><a href="about.html#investors">Investors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="support.html">Help Centre</a></li>
+            <li><a href="support.html#community">Community</a></li>
+            <li><a href="support.html#status">Network Status</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <div class="footer-bottom">
+      <div class="footer-status">
+        <span class="status-dot-green" aria-hidden="true"></span>
+        <span>Orbiqa Network Status: All Systems Operational</span>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Orbiqa Global. All rights reserved.</span>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/nav.js"></script>
+<script src="js/globe.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Network story globe is initialized in js/main.js -->
+
+</body>
+</html>

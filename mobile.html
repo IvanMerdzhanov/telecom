@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Mobile — 5G Plans for Everywhere</title>
+  <meta name="description" content="Orbiqa 5G mobile plans: Signal, Orbit, and Apex. Coverage in 190 countries with eSIM activation, unlimited data, and priority 5G.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1B6FFF"/>
+      <stop offset="100%" stop-color="#7B3FFF"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Personal</a>
+        <div class="nav-dropdown">
+          <a href="mobile.html">Mobile</a>
+          <a href="internet.html">Internet</a>
+          <a href="tv.html">TV &amp; Streaming</a>
+          <a href="sport.html">Orbiqa Sport</a>
+          <a href="devices.html">Devices</a>
+          <a href="bundles.html">Bundles</a>
+          <a href="roaming.html">Global Roaming</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Business</a>
+        <div class="nav-dropdown">
+          <a href="business.html#smb">SMB</a>
+          <a href="business.html#enterprise">Enterprise</a>
+          <a href="business.html#wholesale">Wholesale</a>
+          <a href="business.html#iot">IoT</a>
+        </div>
+      </div>
+      <div class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Global</a>
+        <div class="nav-dropdown">
+          <a href="coverage.html">Coverage Map</a>
+          <a href="roaming.html">Roaming</a>
+          <a href="about.html">Orbiqa Worldwide</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links">
+      <a href="mobile.html">Mobile</a>
+      <a href="internet.html">Internet</a>
+      <a href="tv.html">TV &amp; Streaming</a>
+      <a href="sport.html">Orbiqa Sport</a>
+      <a href="devices.html">Devices</a>
+      <a href="bundles.html">Bundles</a>
+      <a href="roaming.html">Global Roaming</a>
+      <a href="business.html">Business</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="about.html">About Orbiqa</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="nav-overlay-actions">
+      <a href="#" class="btn btn-ghost">My Orbiqa</a>
+      <a href="#plans" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <span class="eyebrow page-hero-content .eyebrow">ORBIQA MOBILE</span>
+    <h1 class="page-hero-title">Your Signal.<br><span class="gradient-text">Everywhere.</span></h1>
+    <p class="page-hero-sub">5G in 190 countries. Plans that work as hard as you do. eSIM or physical SIM — your choice, instant activation.</p>
+    <div class="page-hero-actions">
+      <a href="#plans" class="btn btn-primary btn-signal">See Plans</a>
+      <a href="coverage.html" class="btn btn-ghost">Check Coverage</a>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="inner-section" id="plans">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">CHOOSE YOUR PLAN</span>
+      <h2 class="section-title-lg">Every Plan.<br>Unlimited Everywhere.</h2>
+      <p class="section-body-lg">No contracts. Cancel anytime. Port your number in 24 hours.</p>
+      <div class="plan-toggles" role="group">
+        <div class="toggle-group" id="planTypeToggle" role="radiogroup">
+          <button class="toggle-btn active" data-type="personal">Personal</button>
+          <button class="toggle-btn" data-type="family">Family</button>
+        </div>
+        <div class="toggle-group" id="billingToggle" role="radiogroup">
+          <button class="toggle-btn active" data-billing="monthly">Monthly</button>
+          <button class="toggle-btn" data-billing="annual">Annual <span class="save-badge">Save 20%</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="plans-grid" id="plansGrid">
+      <div class="plan-card reveal" data-delay="0">
+        <div class="plan-header">
+          <span class="plan-name">Signal</span>
+          <p class="plan-tagline">Essential connectivity</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-personal-monthly="29" data-personal-annual="22" data-family-monthly="55" data-family-annual="44">29</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>50 GB Data</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5G Access</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Roaming in 60 Countries</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>HD Voice &amp; Video Calls</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>eSIM Ready</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>10 GB Mobile Hotspot</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-full">Choose Signal</a>
+      </div>
+
+      <div class="plan-card featured reveal" data-delay="100">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-header">
+          <span class="plan-name">Orbit</span>
+          <p class="plan-tagline">Unlimited, everywhere</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-personal-monthly="59" data-personal-annual="47" data-family-monthly="99" data-family-annual="79">59</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited Data</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5G Ultra Access</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Roaming in 190 Countries</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>HD Voice &amp; Video Calls</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>eSIM Ready</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>30 GB Mobile Hotspot</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Exclusive Orbit subscriber perks</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-full btn-signal">Choose Orbit</a>
+      </div>
+
+      <div class="plan-card reveal" data-delay="200">
+        <div class="plan-header">
+          <span class="plan-name">Apex</span>
+          <p class="plan-tagline">The complete experience</p>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount" data-personal-monthly="99" data-personal-annual="79" data-family-monthly="169" data-family-annual="135">99</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited Data + Priority</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>5G Ultra + mmWave</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Global Unlimited Roaming</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>80 GB Mobile Hotspot</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>eSIM Ready</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated Priority Support</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Annual device protection included</li>
+          <li><svg class="check-icon" viewBox="0 0 16 16" fill="none"><polyline points="2,8 6,12 14,4" stroke="url(#brandGradH)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Apex subscriber status perks</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-full">Choose Apex</a>
+      </div>
+    </div>
+    <div class="plans-trust reveal" style="margin-top:2rem">
+      <span>No contracts.</span><span>Cancel anytime.</span><span>Port your number in 24 hours.</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY 5G -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">ORBIQA 5G</span>
+      <h2 class="section-title-lg">Why Orbiqa 5G</h2>
+      <p class="section-body-lg">Not all 5G is created equal. Orbiqa 5G Ultra uses mmWave and Sub-6 GHz spectrum for the fastest, most reliable connection on earth.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-box reveal" data-delay="0">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><polygon points="28,4 12,28 24,28 20,44 36,20 24,20" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round" fill="rgba(27,111,255,0.1)"/></svg></div>
+        <div class="feature-box-title">Fastest 5G</div>
+        <div class="feature-box-desc">Peak download speeds up to 10 Gbps on our mmWave network in major cities. No other carrier comes close.</div>
+      </div>
+      <div class="feature-box reveal" data-delay="60">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><circle cx="24" cy="24" r="20" stroke="url(#brandGradH)" stroke-width="1.5"/><ellipse cx="24" cy="24" rx="9" ry="20" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="4" y1="24" x2="44" y2="24" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="8" y1="14" x2="40" y2="14" stroke="url(#brandGradH)" stroke-width="1"/><line x1="8" y1="34" x2="40" y2="34" stroke="url(#brandGradH)" stroke-width="1"/></svg></div>
+        <div class="feature-box-title">Global Coverage</div>
+        <div class="feature-box-desc">5G in 50+ countries, 4G in 190. You're covered on every continent, every time zone, every trip.</div>
+      </div>
+      <div class="feature-box reveal" data-delay="120">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><rect x="12" y="4" width="24" height="40" rx="5" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="20" y1="10" x2="28" y2="10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><path d="M24 20v12M20 28l4 4 4-4" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="feature-box-title">eSIM Ready</div>
+        <div class="feature-box-desc">Activate in minutes with eSIM. No waiting for a physical SIM card. Compatible with all modern smartphones.</div>
+      </div>
+      <div class="feature-box reveal" data-delay="0">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><circle cx="24" cy="24" r="20" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="10" y1="10" x2="38" y2="38" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div class="feature-box-title">No Throttling</div>
+        <div class="feature-box-desc">Unlimited means unlimited. We never throttle video, gaming, or streaming — even at peak times.</div>
+      </div>
+      <div class="feature-box reveal" data-delay="60">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><path d="M16 6h16v18a8 8 0 01-16 0V6z" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 10H8a4 4 0 004 4h4M32 10h8a4 4 0 01-4 4h-4" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="32" x2="24" y2="38" stroke="url(#brandGradH)" stroke-width="1.5"/><path d="M16 38h16" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="feature-box-title">Priority Data</div>
+        <div class="feature-box-desc">Apex and Orbit plans include priority data, so you always get the best speeds even in crowded areas.</div>
+      </div>
+      <div class="feature-box reveal" data-delay="120">
+        <div class="feature-box-icon"><svg viewBox="0 0 48 48" fill="none" width="32" height="32"><circle cx="24" cy="24" r="20" stroke="url(#brandGradH)" stroke-width="1.5"/><circle cx="24" cy="24" r="9" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="24" y1="4" x2="24" y2="15" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="24" y1="33" x2="24" y2="44" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="4" y1="24" x2="15" y2="24" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="33" y1="24" x2="44" y2="24" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div class="feature-box-title">24/7 Support</div>
+        <div class="feature-box-desc">Real people, any time, any day. Chat, call, or video — we're always here when you need us most.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- eSIM SPOTLIGHT -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">ESIM</span>
+      <h2 class="section-title-lg">Switch in Minutes,<br>Not Days.</h2>
+      <p class="section-body-lg">The physical SIM card is history. Orbiqa eSIM activates instantly, right from your phone — no store visits, no waiting.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step reveal" data-delay="0">
+        <div class="step-num">1</div>
+        <div class="step-title">Choose Your Plan</div>
+        <div class="step-desc">Pick the plan that suits your lifestyle. Orbit and Apex include global roaming.</div>
+      </div>
+      <div class="step reveal" data-delay="100">
+        <div class="step-num">2</div>
+        <div class="step-title">Scan & Activate</div>
+        <div class="step-desc">Receive a QR code by email. Scan it in Settings → Cellular. Takes under 2 minutes.</div>
+      </div>
+      <div class="step reveal" data-delay="200">
+        <div class="step-num">3</div>
+        <div class="step-title">You're Connected</div>
+        <div class="step-desc">5G activates immediately. Your old number transfers automatically within 24 hours.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEED COMPARISON TABLE -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">SPEED COMPARISON</span>
+      <h2 class="section-title-lg">Orbiqa vs the Competition</h2>
+    </div>
+    <div class="reveal">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="col-highlight">Orbiqa 5G Ultra</th>
+            <th>Competitor A</th>
+            <th>Competitor B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Peak Download Speed</td>
+            <td class="col-highlight" style="color:#1B6FFF;font-weight:700">10 Gbps</td>
+            <td>4.2 Gbps</td>
+            <td>3.8 Gbps</td>
+          </tr>
+          <tr>
+            <td>Upload Speed</td>
+            <td class="col-highlight" style="color:#1B6FFF;font-weight:700">2 Gbps</td>
+            <td>800 Mbps</td>
+            <td>600 Mbps</td>
+          </tr>
+          <tr>
+            <td>Latency</td>
+            <td class="col-highlight" style="color:#1B6FFF;font-weight:700">&lt;5ms</td>
+            <td>12ms</td>
+            <td>18ms</td>
+          </tr>
+          <tr>
+            <td>Coverage Countries</td>
+            <td class="col-highlight" style="color:#1B6FFF;font-weight:700">190+</td>
+            <td>120</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Roaming Included</td>
+            <td class="col-highlight check"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
+            <td class="cross"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><line x1="4" y1="4" x2="12" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/></svg></td>
+            <td class="cross"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><line x1="4" y1="4" x2="12" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/></svg></td>
+          </tr>
+          <tr>
+            <td>eSIM Support</td>
+            <td class="col-highlight check"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
+            <td class="check"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
+            <td class="cross"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><line x1="4" y1="4" x2="12" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/></svg></td>
+          </tr>
+          <tr>
+            <td>No Throttling</td>
+            <td class="col-highlight check"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></td>
+            <td class="cross"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><line x1="4" y1="4" x2="12" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/></svg></td>
+            <td class="cross"><svg viewBox="0 0 16 16" fill="none" width="16" height="16" style="display:inline"><line x1="4" y1="4" x2="12" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="4" x2="4" y2="12" stroke="rgba(255,80,80,0.7)" stroke-width="2" stroke-linecap="round"/></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">ADD-ONS</span>
+      <h2 class="section-title-lg">Build Your Perfect Plan</h2>
+      <p class="section-body-lg">Add exactly what you need. Remove it anytime. No lock-in, no surprises.</p>
+    </div>
+    <div class="addons-strip">
+      <div class="addon-card reveal" data-delay="0">
+        <div class="addon-icon"><svg viewBox="0 0 48 48" fill="none" width="28" height="28"><rect x="4" y="10" width="40" height="28" rx="4" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="4" y1="18" x2="44" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="14" y1="10" x2="14" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="24" y1="10" x2="24" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><line x1="34" y1="10" x2="34" y2="18" stroke="url(#brandGradH)" stroke-width="1"/><polygon points="20,26 20,34 30,30" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <div class="addon-name">Streaming Bundle</div>
+        <div class="addon-price">+ $5 / mo</div>
+        <div class="addon-desc">Netflix, Disney+, and HBO Max bundled at a massive discount.</div>
+      </div>
+      <div class="addon-card reveal" data-delay="60">
+        <div class="addon-icon"><svg viewBox="0 0 48 48" fill="none" width="28" height="28"><path d="M24 4l16 6v14c0 9-7 15-16 18C15 39 8 33 8 24V10l16-6z" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linejoin="round"/><polyline points="17,24 22,29 31,20" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="addon-name">Device Protection</div>
+        <div class="addon-price">+ $8 / mo</div>
+        <div class="addon-desc">Screen, drop, water damage — covered up to $1,500 per claim.</div>
+      </div>
+      <div class="addon-card reveal" data-delay="120">
+        <div class="addon-icon"><svg viewBox="0 0 48 48" fill="none" width="28" height="28"><circle cx="24" cy="24" r="20" stroke="url(#brandGradH)" stroke-width="1.5"/><ellipse cx="24" cy="24" rx="8" ry="20" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="4" y1="24" x2="44" y2="24" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div class="addon-name">International Pack</div>
+        <div class="addon-price">+ $15 / mo</div>
+        <div class="addon-desc">Unlimited calls and texts to 60 international destinations.</div>
+      </div>
+      <div class="addon-card reveal" data-delay="180">
+        <div class="addon-icon"><svg viewBox="0 0 48 48" fill="none" width="28" height="28"><path d="M14 34c-5-5-5-14 0-20M34 34c5-5 5-14 0-20" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><path d="M19 29c-3-3-3-8 0-10M29 29c3-3 3-8 0-10" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="3" fill="rgba(27,111,255,0.2)" stroke="url(#brandGradH)" stroke-width="1.5"/><line x1="24" y1="27" x2="24" y2="42" stroke="url(#brandGradH)" stroke-width="1.5"/></svg></div>
+        <div class="addon-name">Hotspot Pro</div>
+        <div class="addon-price">+ $10 / mo</div>
+        <div class="addon-desc">Upgrade to 100 GB of high-speed hotspot data per month.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">Common Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">Can I keep my existing number?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. We'll transfer your number from any carrier within 24 hours, completely free of charge. You stay reachable the entire time during the transfer.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What exactly is 5G Ultra?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">5G Ultra is Orbiqa's premium tier of 5G, combining mmWave spectrum (ultra-fast, short range) with mid-band Sub-6 GHz (broad coverage). Together they deliver speeds up to 10 Gbps in cities and a consistent 1 Gbps+ in suburban areas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does my phone support eSIM?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Most phones released after 2018 support eSIM, including all iPhones from XS onwards, Samsung Galaxy S20 and later, Google Pixel 3 and later, and many others. Check our compatibility list or contact support to confirm your specific device.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What happens if I exceed my data limit?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">On Signal plan (50 GB), after your monthly allowance is used your data continues at a reduced speed of 1 Mbps — enough for messaging and basic browsing. Orbit and Apex plans are truly unlimited with no speed reduction.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I pause my plan if I'm travelling long-term?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. You can pause your plan for up to 6 months via the MyOrbiqa app. Your number is held, your settings preserved, and you're charged a minimal hold fee of $5/month. Resume instantly when you're ready.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="inner-section" style="text-align:center">
+  <div class="container" style="max-width:680px">
+    <span class="section-eyebrow reveal">GET STARTED</span>
+    <h2 class="section-title-lg reveal">Switch Today —<br><span class="gradient-text">Free for 30 Days.</span></h2>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">No commitment. If Orbiqa isn't the best signal you've ever had, we'll give you a full refund. No questions asked.</p>
+    <div class="reveal" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="#plans" class="btn btn-primary btn-signal">Choose Your Plan</a>
+      <a href="coverage.html" class="btn btn-ghost">Check My Coverage</a>
+    </div>
+    <p class="final-trust reveal" style="margin-top:2rem">Free eSIM · Free number transfer · No contracts · 30-day guarantee</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a>
+        <p class="footer-tagline">The Network the World Runs On.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">◻</a>
+          <a href="#" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let planType = 'personal', billing = 'monthly';
+  function updatePrices() {
+    document.querySelectorAll('.price-amount').forEach(el => {
+      const key = planType + billing.charAt(0).toUpperCase() + billing.slice(1);
+      const val = el.dataset[key];
+      if (val) el.textContent = val;
+    });
+    document.querySelectorAll('.price-period').forEach(el => { el.textContent = billing === 'annual' ? '/mo*' : '/mo'; });
+  }
+  document.querySelectorAll('#planTypeToggle .toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#planTypeToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active'); planType = btn.dataset.type; updatePrices();
+    });
+  });
+  document.querySelectorAll('#billingToggle .toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#billingToggle .toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active'); billing = btn.dataset.billing; updatePrices();
+    });
+  });
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>

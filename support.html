@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Support — How Can We Help?</title>
+  <meta name="description" content="Orbiqa Support: find answers, troubleshoot issues, manage your account, and get in touch with our 24/7 support team via chat, phone, or video.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="mobile.html" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="mobile.html" class="btn btn-primary">Get Started</a></div>
+  </div>
+</div>
+
+<!-- HERO — clean, centered search -->
+<section style="min-height:50vh;display:flex;align-items:center;background:var(--bg-base);padding:100px 0 4rem">
+  <div class="container" style="text-align:center;max-width:700px">
+    <span class="section-eyebrow reveal">SUPPORT CENTRE</span>
+    <h1 class="section-title-lg reveal" style="font-size:clamp(36px,5vw,60px)">How Can We Help?</h1>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">Search for answers, or choose a topic below. We're here 24/7.</p>
+    <div class="coverage-input-wrap reveal" style="max-width:580px;margin:0 auto">
+      <svg class="coverage-search-icon" viewBox="0 0 24 24" fill="none" width="20" height="20"><circle cx="11" cy="11" r="7" stroke="#5A6080" stroke-width="1.5"/><path d="M17 17l4 4" stroke="#5A6080" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input type="text" id="supportSearch" class="coverage-input" placeholder="Search for help... e.g. 'reset password' or 'eSIM'">
+      <button type="button" class="coverage-submit btn btn-primary" onclick="document.getElementById('supportSearch').dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}))">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT TOPICS -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">TOPICS</span>
+      <h2 class="section-title-lg">Browse by Topic</h2>
+    </div>
+    <div class="support-topics">
+      <a href="#billing" class="support-tile reveal" data-delay="0">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><rect x="1" y="4" width="22" height="16" rx="3"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <div class="support-tile-title">Billing &amp; Payments</div>
+        <div class="support-tile-desc">View bills, payment methods, refunds</div>
+      </a>
+      <a href="#setup" class="support-tile reveal" data-delay="60">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="support-tile-title">Setup &amp; Installation</div>
+        <div class="support-tile-desc">eSIM, router, and device setup guides</div>
+      </a>
+      <a href="#technical" class="support-tile reveal" data-delay="120">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg></div>
+        <div class="support-tile-title">Technical Issues</div>
+        <div class="support-tile-desc">Connectivity, speed, and troubleshooting</div>
+      </a>
+      <a href="#account" class="support-tile reveal" data-delay="0">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" width="44" height="44"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <div class="support-tile-title">Account Management</div>
+        <div class="support-tile-desc">Passwords, details, plan changes</div>
+      </a>
+      <a href="roaming.html" class="support-tile reveal" data-delay="60">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+        <div class="support-tile-title">Roaming &amp; Travel</div>
+        <div class="support-tile-desc">Activating roaming, Day Pass, coverage</div>
+      </a>
+      <a href="tv.html" class="support-tile reveal" data-delay="120">
+        <div class="support-tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><rect x="2" y="3" width="20" height="14" rx="3"/><polyline points="8,21 12,17 16,21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="support-tile-title">TV &amp; Streaming</div>
+        <div class="support-tile-desc">App setup, channels, DVR, streaming</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT OPTIONS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">CONTACT US</span>
+      <h2 class="section-title-lg">Speak to Someone</h2>
+      <p class="section-body-lg">Prefer to talk? Our team is available 24/7 via chat, phone, or scheduled video call.</p>
+    </div>
+    <div class="contact-options">
+      <a href="#" class="contact-option reveal" data-delay="0">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <div class="contact-option-title">Live Chat</div>
+        <div class="contact-option-desc">Available 24 hours a day, 7 days a week. Average response time: under 45 seconds.</div>
+        <div class="contact-option-cta">Start Chat →</div>
+      </a>
+      <a href="tel:08008ORBIQA" class="contact-option reveal" data-delay="80">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.99 12 19.79 19.79 0 011.93 3.39 2 2 0 013.92 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div class="contact-option-title">Phone</div>
+        <div class="contact-option-desc">Monday to Friday, 8am–10pm local time. Weekends 9am–6pm. Free from Orbiqa mobiles.</div>
+        <div class="contact-option-cta">0800 ORBIQA →</div>
+      </a>
+      <a href="#" class="contact-option reveal" data-delay="160">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="3"/></svg></div>
+        <div class="contact-option-title">Video Call</div>
+        <div class="contact-option-desc">Face-to-face support for complex issues. Book a 30-minute session with a specialist.</div>
+        <div class="contact-option-cta">Schedule →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR ARTICLES -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">QUICK ANSWERS</span>
+      <h2 class="section-title-lg">Most Popular Articles</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0" class="reveal">
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="9" y1="7" x2="15" y2="7"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">How to set up eSIM</div><div style="font-size:13px;color:var(--text-muted)">iPhone, Samsung, Pixel — step by step</div></div>
+      </a>
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">How to check your data usage</div><div style="font-size:13px;color:var(--text-muted)">Real-time usage in the MyOrbiqa app</div></div>
+      </a>
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><rect x="1" y="4" width="22" height="16" rx="3"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">How to pay your bill</div><div style="font-size:13px;color:var(--text-muted)">Auto-pay, manual payment, direct debit</div></div>
+      </a>
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">How to activate roaming</div><div style="font-size:13px;color:var(--text-muted)">Day Pass, Weekly, or Global Unlimited</div></div>
+      </a>
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><path d="M5 12.55a11 11 0 0114.08 0M1.42 9a16 16 0 0121.16 0M8.53 16.11a6 6 0 016.95 0M12 20h.01"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">Router troubleshooting</div><div style="font-size:13px;color:var(--text-muted)">Restart, reset, and reconnect your WiFi 7 router</div></div>
+      </a>
+      <a href="#" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem 1.5rem;text-decoration:none;display:flex;align-items:center;gap:1rem;transition:all 0.25s;color:inherit" onmouseover="this.style.borderColor='var(--border-active)'" onmouseout="this.style.borderColor='var(--border-subtle)'">
+        <svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="28" height="28" style="flex-shrink:0"><polyline points="23,4 23,10 17,10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+        <div><div style="font-size:15px;font-weight:600;color:var(--text-primary)">How to update your plan</div><div style="font-size:13px;color:var(--text-muted)">Upgrade, downgrade, or add extras</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="inner-section" id="community">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div class="reveal">
+        <span class="section-eyebrow">COMMUNITY</span>
+        <h2 class="section-title-lg">2.4 Million Users<br>Helping Each Other.</h2>
+        <p class="section-body-lg">Join the Orbiqa Community — our peer-to-peer forum where customers share tips, solutions, and experiences. Most questions are answered in under 10 minutes.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="#" class="btn btn-primary btn-signal">Join Community</a>
+          <a href="#" class="btn btn-ghost">Browse Topics</a>
+        </div>
+      </div>
+      <div class="reveal" data-delay="200" style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:2.5rem">
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div style="background:var(--bg-panel);border-radius:var(--radius-sm);padding:1rem;border-left:3px solid var(--signal-blue)"><div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:0.25rem"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" style="display:inline-block;vertical-align:-2px;margin-right:4px"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>eSIM setup solved in 5 minutes</div><div style="font-size:12px;color:var(--text-muted)">by james_t · 34 replies</div></div>
+          <div style="background:var(--bg-panel);border-radius:var(--radius-sm);padding:1rem;border-left:3px solid var(--orbit-violet)"><div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:0.25rem">Speed test results thread — share yours</div><div style="font-size:12px;color:var(--text-muted)">by network_nerd · 892 replies</div></div>
+          <div style="background:var(--bg-panel);border-radius:var(--radius-sm);padding:1rem;border-left:3px solid var(--nova-magenta)"><div style="font-size:13px;font-weight:600;color:var(--text-primary);margin-bottom:0.25rem">Best countries for roaming — full guide</div><div style="font-size:12px;color:var(--text-muted)">by wanderer_k · 211 replies</div></div>
+        </div>
+        <div style="margin-top:1rem;font-size:13px;color:var(--text-muted)">2,408,199 members · 47 new posts today</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APP DOWNLOAD -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="text-align:center;max-width:680px">
+    <span class="section-eyebrow reveal">MY ORBIQA APP</span>
+    <h2 class="section-title-lg reveal">Manage Everything<br>in the App.</h2>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">Check your data, pay bills, activate roaming, contact support, troubleshoot your router — all from one beautifully designed app.</p>
+    <div class="app-download reveal" style="justify-content:center">
+      <a href="#" class="app-store-btn">
+        <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+      <a href="#" class="app-store-btn">
+        <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M3.18 23.76a2 2 0 001.92-.18l11.5-6.62-2.5-2.5L3.18 23.76zM20.7 9.34L17.5 7.5l-2.77 2.77 2.77 2.77 3.23-1.84a1.63 1.63 0 000-2.86zM1.43.9A1.6 1.6 0 001 2v20a1.6 1.6 0 00.43 1.1l.1.1L13.1 12 1.53.8l-.1.1zM5.1 1.42L16.6 8.04l-2.5 2.5L5.1 1.42z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORK STATUS -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">NETWORK STATUS</span>
+      <h2 class="section-title-lg">All Systems Operational</h2>
+    </div>
+    <div class="status-indicator reveal">
+      <div class="status-dot-green"></div>
+      <div class="status-text"><strong>All Orbiqa services are running normally.</strong> Last checked: March 22, 2026 at 14:32 UTC</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0" class="reveal">
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem"><div class="status-dot-green"></div><div style="font-size:14px;font-weight:600">5G Network</div></div>
+        <div style="font-size:12px;color:var(--text-muted)">All regions operational</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem"><div class="status-dot-green"></div><div style="font-size:14px;font-weight:600">Fiber Network</div></div>
+        <div style="font-size:12px;color:var(--text-muted)">All regions operational</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem"><div class="status-dot-green"></div><div style="font-size:14px;font-weight:600">Orbiqa TV</div></div>
+        <div style="font-size:12px;color:var(--text-muted)">All streams operational</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem"><div class="status-dot-green"></div><div style="font-size:14px;font-weight:600">MyOrbiqa App</div></div>
+        <div style="font-size:12px;color:var(--text-muted)">All systems operational</div>
+      </div>
+    </div>
+    <p class="reveal"><a href="#" style="color:var(--signal-blue);font-size:14px">View full network status page →</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="max-width:760px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title-lg">Common Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question">How do I reset my password?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to my.orbiqa.com and click "Forgot Password". Enter your email address and we'll send a reset link within 60 seconds. If you don't receive it, check your spam folder or call us on 0800 ORBIQA. You can also reset your password in the MyOrbiqa app under Account → Security.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I get a PAC code to keep my number?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">To port your number away from Orbiqa, text PAC to 65075. You'll receive your PAC code within 60 seconds, free of charge. The PAC code is valid for 30 days. Give it to your new provider and they'll handle the transfer. Your number will move within 1 working day.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is eSIM and does my phone support it?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">eSIM (Embedded SIM) is a digital SIM built into your phone — no physical SIM card needed. It lets you activate a plan instantly via QR code. Most phones from 2018 onwards support eSIM, including all iPhones from XS, Samsung Galaxy S20+, Google Pixel 3+, and many others. Check Settings → Cellular/Mobile Data to see if your phone shows "Add eSIM" option.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I check my bill?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">View your current and past bills in the MyOrbiqa app under Billing, or at my.orbiqa.com. Bills are also emailed to your registered address each month. You can download PDF copies going back 24 months. If you have questions about a charge, live chat is the fastest way to get an answer.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I cancel my Orbiqa plan?<span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">You can cancel with 30 days' notice at any time via the app (Account → Plan → Cancel Plan), by calling 0800 ORBIQA, or by live chat. There are no early termination fees — Orbiqa has no contracts. If you're within your first 30 days, you're entitled to a full refund of your first month's payment.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">◻</a><a href="#" class="social-link">▶</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

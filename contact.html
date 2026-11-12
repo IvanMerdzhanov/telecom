@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbiqa Contact — Find Us Anywhere</title>
+  <meta name="description" content="Contact Orbiqa via live chat, phone, store visit, or our contact form. Offices in New York, London, Dubai, and Singapore.">
+  <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+    <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#1B6FFF"/><stop offset="100%" stop-color="#7B3FFF"/></linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><img src="pictures/logo.png" alt="Orbiqa" class="nav-logo-img"></a>
+    <div class="nav-links">
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Personal</a><div class="nav-dropdown"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Business</a><div class="nav-dropdown"><a href="business.html#smb">SMB</a><a href="business.html#enterprise">Enterprise</a><a href="business.html#wholesale">Wholesale</a><a href="business.html#iot">IoT</a></div></div>
+      <div class="nav-item has-dropdown"><a href="#" class="nav-link">Global</a><div class="nav-dropdown"><a href="coverage.html">Coverage Map</a><a href="roaming.html">Roaming</a><a href="about.html">Orbiqa Worldwide</a><a href="sponsorships.html">Sponsorships</a></div></div>
+      <div class="nav-item"><a href="support.html" class="nav-link">Support</a></div>
+    </div>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost-sm">My Orbiqa</a>
+      <a href="mobile.html" class="btn btn-primary-sm">Get Started</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-content">
+    <button class="nav-close" id="navClose">&times;</button>
+    <div class="nav-overlay-arc"></div>
+    <nav class="nav-overlay-links"><a href="mobile.html">Mobile</a><a href="internet.html">Internet</a><a href="tv.html">TV &amp; Streaming</a><a href="sport.html">Orbiqa Sport</a><a href="devices.html">Devices</a><a href="bundles.html">Bundles</a><a href="roaming.html">Global Roaming</a><a href="business.html">Business</a><a href="coverage.html">Coverage</a><a href="about.html">About Orbiqa</a><a href="sponsorships.html">Sponsorships</a><a href="support.html">Support</a></nav>
+    <div class="nav-overlay-actions"><a href="#" class="btn btn-ghost">My Orbiqa</a><a href="mobile.html" class="btn btn-primary">Get Started</a></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section style="padding:100px 0 4rem;background:var(--bg-base);text-align:center">
+  <div class="container" style="max-width:700px">
+    <span class="section-eyebrow reveal">CONTACT</span>
+    <h1 class="section-title-lg reveal" style="font-size:clamp(36px,5vw,60px)">Find Orbiqa.<br><span class="gradient-text">We're Closer Than You Think.</span></h1>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">Instant chat, phone, video call, or visit us in person. However you prefer to communicate, we're here.</p>
+  </div>
+</section>
+
+<!-- CONTACT OPTIONS -->
+<section class="inner-section inner-section-dark">
+  <div class="container">
+    <div class="contact-options">
+      <a href="#" class="contact-option reveal" data-delay="0">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <div class="contact-option-title">Live Chat</div>
+        <div class="contact-option-desc">Available 24 hours a day, 7 days a week. Our agents are online now — typical reply in under 45 seconds.</div>
+        <div class="contact-option-cta">Start Chat →</div>
+      </a>
+      <a href="tel:+18008ORBIQA" class="contact-option reveal" data-delay="80">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.99 12 19.79 19.79 0 011.93 3.39 2 2 0 013.92 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div class="contact-option-title">Phone</div>
+        <div class="contact-option-desc">Mon–Fri 8am–10pm · Sat–Sun 9am–6pm (local time). Free from any Orbiqa phone.</div>
+        <div class="contact-option-cta">+1 800 ORBIQA →</div>
+      </a>
+      <a href="#stores" class="contact-option reveal" data-delay="160">
+        <div class="contact-option-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+        <div class="contact-option-title">Store Visit</div>
+        <div class="contact-option-desc">Walk into any Orbiqa store for in-person assistance. 500+ stores across 60 countries.</div>
+        <div class="contact-option-cta">Find a Store →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="inner-section" id="form">
+  <div class="container" style="max-width:800px">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">SEND A MESSAGE</span>
+      <h2 class="section-title-lg">Get in Touch</h2>
+      <p class="section-body-lg">Fill in the form below and we'll respond within 2 hours during business hours, or the next working morning for after-hours submissions.</p>
+    </div>
+    <div class="reveal">
+      <form class="contact-form contact-form-el">
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" placeholder="Your full name" required></div>
+          <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="your@email.com" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="+1 800 123 4567"></div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <select class="form-select">
+              <option value="">Select a subject...</option>
+              <option>Sales Enquiry</option>
+              <option>Technical Support</option>
+              <option>Business Solutions</option>
+              <option>Press &amp; Media</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="How can we help you?" required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-signal" style="width:100%;padding:16px">Send Message</button>
+        <div class="form-success-msg"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" style="display:inline-block;vertical-align:-2px;margin-right:4px"><polyline points="2,8 6,12 14,4" stroke="#00C87A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Message sent! We'll respond within 2 hours during business hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- STORE MAP -->
+<section class="inner-section inner-section-dark" id="stores">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">FIND A STORE</span>
+      <h2 class="section-title-lg">Orbiqa Stores Near You</h2>
+      <p class="section-body-lg">Visit a store for device demos, plan advice, eSIM activation, and hands-on support. Walk-ins welcome.</p>
+    </div>
+    <div id="store-map" class="reveal" style="height:50vh"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem" class="reveal">
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Orbiqa NYC — Fifth Avenue</div>
+        <div style="font-size:13px;color:var(--text-muted)">500 Fifth Ave, New York, NY<br>Mon–Sat 9am–8pm · Sun 10am–6pm</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Orbiqa London — Regent St</div>
+        <div style="font-size:13px;color:var(--text-muted)">210 Regent St, London W1B<br>Mon–Sat 9am–9pm · Sun 11am–6pm</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Orbiqa Dubai — Mall of Emirates</div>
+        <div style="font-size:13px;color:var(--text-muted)">Mall of Emirates, Dubai<br>Daily 10am–10pm</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Orbiqa Singapore — Orchard</div>
+        <div style="font-size:13px;color:var(--text-muted)">313 Orchard Rd, Singapore<br>Daily 10am–9pm</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem">
+        <div style="font-size:14px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Orbiqa Sydney — Pitt St</div>
+        <div style="font-size:13px;color:var(--text-muted)">188 Pitt St, Sydney NSW<br>Mon–Sat 9am–7pm · Sun 10am–5pm</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.25rem;display:flex;align-items:center;justify-content:center">
+        <a href="#" style="color:var(--signal-blue);font-size:14px;font-weight:600">View all 500+ stores →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECT CONTACT INFO -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">DIRECT LINES</span>
+      <h2 class="section-title-lg">Direct Contact</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem" class="reveal">
+      <div>
+        <div style="font-size:12px;font-family:var(--font-mono);color:var(--signal-blue);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem">General</div>
+        <div style="font-size:22px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">+1 800 ORBIQA</div>
+        <div style="font-size:13px;color:var(--text-muted)">Available 24/7 for all enquiries</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:0.5rem">hello@orbiqa.com</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-family:var(--font-mono);color:var(--orbit-violet);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem">Business</div>
+        <div style="font-size:22px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">+1 800 UNI-BIZ</div>
+        <div style="font-size:13px;color:var(--text-muted)">Mon–Fri 8am–8pm for business sales</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:0.5rem">business@orbiqa.com</div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-family:var(--font-mono);color:var(--nova-magenta);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem">Press &amp; Media</div>
+        <div style="font-size:22px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Media Line</div>
+        <div style="font-size:13px;color:var(--text-muted)">For journalists and media enquiries</div>
+        <div style="font-size:13px;color:var(--text-muted);margin-top:0.5rem">press@orbiqa.com</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="inner-section inner-section-dark">
+  <div class="container" style="text-align:center;max-width:680px">
+    <span class="section-eyebrow reveal">SOCIAL</span>
+    <h2 class="section-title-lg reveal">Follow Orbiqa</h2>
+    <p class="section-body-lg reveal" style="margin-left:auto;margin-right:auto">News, updates, network status, and behind-the-scenes from the world's most connected network.</p>
+    <div class="footer-social reveal" style="justify-content:center;gap:1.5rem;margin-top:2rem">
+      <a href="#" class="social-link" style="width:48px;height:48px;font-size:20px">𝕏</a>
+      <a href="#" class="social-link" style="width:48px;height:48px;font-size:20px">in</a>
+      <a href="#" class="social-link" style="width:48px;height:48px;font-size:20px">◻</a>
+      <a href="#" class="social-link" style="width:48px;height:48px;font-size:20px">▶</a>
+    </div>
+  </div>
+</section>
+
+<!-- REGIONAL OFFICES -->
+<section class="inner-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">GLOBAL OFFICES</span>
+      <h2 class="section-title-lg">Where We Work</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem" class="reveal">
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2rem;display:flex;gap:1.5rem">
+        <div style="flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">New York</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">One World Trade Center<br>285 Fulton St, New York, NY 10007<br>+1 212 UNI-GLOB<br>newyork@orbiqa.com</div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2rem;display:flex;gap:1.5rem">
+        <div style="flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">London</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Orbiqa House, 100 Bishopsgate<br>London EC2N 4AG, UK<br>+44 20 7123 4567<br>london@orbiqa.com</div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2rem;display:flex;gap:1.5rem">
+        <div style="flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Dubai</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Orbiqa MENA HQ<br>Burj Khalifa District, Dubai UAE<br>+971 4 123 4567<br>dubai@orbiqa.com</div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2rem;display:flex;gap:1.5rem">
+        <div style="flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="url(#brandGradH)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="36" height="36"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--text-primary);margin-bottom:0.25rem">Singapore</div>
+          <div style="font-size:13px;color:var(--text-muted);line-height:1.6">Orbiqa Asia Pacific HQ<br>1 Raffles Quay, Singapore 048583<br>+65 6123 4567<br>singapore@orbiqa.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-spectrum-line"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="index.html"><img src="pictures/logo.png" alt="Orbiqa" class="footer-logo"></a><p class="footer-tagline">The Network the World Runs On.</p><div class="footer-social"><a href="#" class="social-link">𝕏</a><a href="#" class="social-link">in</a><a href="#" class="social-link">◻</a><a href="#" class="social-link">▶</a></div></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Personal</h4><ul><li><a href="mobile.html">Mobile</a></li><li><a href="internet.html">Internet</a></li><li><a href="tv.html">TV &amp; Streaming</a></li><li><a href="devices.html">Devices</a></li><li><a href="roaming.html">Global Roaming</a></li></ul></div>
+        <div class="footer-col"><h4>Business</h4><ul><li><a href="business.html#smb">SMB</a></li><li><a href="business.html#enterprise">Enterprise</a></li><li><a href="business.html#iot">IoT</a></li><li><a href="business.html#wholesale">Wholesale</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Orbiqa</a></li><li><a href="about.html#careers">Careers</a></li><li><a href="about.html#press">Press</a></li><li><a href="about.html#sustainability">Sustainability</a></li></ul></div>
+        <div class="footer-col"><h4>Support</h4><ul><li><a href="support.html">Help Centre</a></li><li><a href="support.html#community">Community</a></li><li><a href="coverage.html">Coverage</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-status"><span class="status-dot-green"></span><span>Orbiqa Network Status: All Systems Operational</span></div>
+      <div class="footer-legal"><span>© 2026 Orbiqa Global. All rights reserved.</span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/nav.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-signal').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const p = document.createElement('span'); p.className='signal-pulse';
+      const r = this.getBoundingClientRect();
+      p.style.left=(e.clientX-r.left)+'px'; p.style.top=(e.clientY-r.top)+'px';
+      this.appendChild(p); setTimeout(()=>p.remove(),600);
+    });
+  });
+});
+</script>
+</body>
+</html>
